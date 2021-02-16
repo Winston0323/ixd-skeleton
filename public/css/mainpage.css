@@ -64,6 +64,7 @@ body{
 }
 .search-box:hover > .search-btn{
   background: white;
+  color: black;
 }
 ::placeholder{
   color: white;
