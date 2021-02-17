@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body{
+    display: grid;
+    /* height: 80%; */
+    /* place-items: center; */
+    /* text-align: center; */
+    /* background: #000; */
+}
+
+.icon{
+    height: 60px;
+}
+.container{
+    /* position: absolute; */
+    /* top: 45%; */
+    /* top: 20%; */
+    /* left: 50%; */
+    /* left: 70%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.buttonsTop{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.buttonsBottom{
+  padding: 0px 0px;
+}
+
+p{
+    font-size: 60px;
+}
+
+.containerLeft{
+    height:150px;
+    background-size: cover;
+    background: rgb(210, 245, 255);
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 10%;
+    padding-right: 100%;
+    display: flex;
+    place-items: right;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+}
+
+.profilePic{
+    /* height: 40%; */
+    height:160px;
+    padding-left: 70%;
+    padding-top: 20%;
+    place-items: right;
+}
+
+.watercolor{
+  height:640px;
+  padding-left: 6%;
+  padding-right: 12%;
+}
+
+.profileName{
+    /* height: 30%; */
+    height:150px;
+    padding-left: 40%;
+    padding-top: 15%;
+    place-items: left;
+    font-size: 360%;
+}
+
+.containerTop{
+    height:150px;
+    background-size: cover;
+    background: rgb(210, 245, 255);
+    padding: 20px 0px;
+    /* border: 1px solid rgb(59, 91, 97); */
+    /* border-radius: 5px; */
+    display: flex;
+    place-items: right;
+    align-items: center;
+    font-size: 400%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerRight{
+    height:150px;
+    background: rgb(210, 245, 255);
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 35%;
+    padding-left: 85%;
+    /* border: 1px solid rgb(59, 91, 97); */
+    float: right;
+    /* border-radius: 5px; */
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    /* flex-direction: column; */
+}
+
+.containerBottom{
+    width:400px;
+    background: rgb(210, 245, 255);
+    padding: 20px 30px;
+    border: 1px solid rgb(59, 91, 97);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    padding-top: 8%;
+    padding-left: 0%;
+    
+}
+
+.buttonLeft{
+  padding-left: 41%;
+  padding-right: 50%;
+  height: 150px;
+  /* width: 500px; */
+  font-size: 300%;
+}
+
+.buttonRight{
+  padding-left: 44%;
+  padding-right: 55%;
+  height: 150px;
+  font-size: 300%;
+}
+
+.container .star-widget{
+    padding-left: 20%;
+    height: 150px;
+    width: 500px;
+    align-items: right;
+}
+
+.star-widget label{
+    /* float: right; */
+    font-size: 50px;
+    color: gold;/*lightgrey;*/
+    /* margin: 0 5px; */
+    text-shadow: 1px 1px #bbb;
+    align-items: right;
+}
+
+.star-widget input{
+    display: none;
+}
+
+.star-widget label:before{
+    content: '★';
+  }
+  .star-widget input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+  }
+  .star-widget:not(:checked) > label:hover,
+  .star-widget:not(:checked) > label:hover ~ label{
+    color: gold;
+  }
+  .star-widget input:checked > label:hover,
+  .star-widget input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+  }
+  .star-widget .result:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 50%;
+    transform: translateX(-47%);
+    bottom: -30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: gold;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+  }
+  .star-widget input:checked ~ .result:before{
+    display: block;
+  }
+  .star-widget #five:checked ~ .result:before{
+    content: "I love it 😍";
+  }
+  .star-widget #four:checked ~ .result:before{
+    content: "I like it 😎";
+  }
+  .star-widget #three:checked ~ .result:before{
+    content: "It's good 😄";
+  }
+  .star-widget #two:checked ~ .result:before{
+    content: "I don't like it 😒";
+  }
+  .star-widget #one:checked ~ .result:before{
+    content: "I hate it 😠";
+    font-size: 20px; 
+    font-weight: 400; 
+    line-height: 1.5;
+  }
+
+a{
+  font-size: 40px;
+
+}
+
+p{
+  font-size: 35px;
+  padding-left: 2%;
+  padding-right: 1%;
+}
+
+.twoButtons{
+  padding-bottom: 3%;
+}
