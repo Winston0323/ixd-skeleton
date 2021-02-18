@@ -1,6 +1,6 @@
 Art Comissioner
 ====
-Installation guide
+Installation guide\
   npm install
 Boot guide
   npm start
