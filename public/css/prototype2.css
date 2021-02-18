@@ -88,6 +88,10 @@ p{
     flex-direction: column;
 }
 
+.h1{
+  height:250px;
+}
+
 .containerRight{
     height:150px;
     background: rgb(210, 245, 255);

@@ -1,30 +1,34 @@
 <html>
 <head>
 	<title>Test Page</title>
-	{{!-- <link href="css/prototype2.css" rel="stylesheet"> --}}
+	<script src="https://kit.fontawesome.com/f56db58fff.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link href="css/prototype2.css" rel="stylesheet">
 </head>
 <body id = "friends">
-	<div class = "row">
-		<div class = "col-md-3">
-			<img class="containerLeft icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-back-512.png" alt="back arrow">
+	<div class = "row bg-primary">
+		<div class = "col-md-3 align-self-center">
+			<h1 class="fas fa-chevron-left"></h1>
 		</div>
-		<div class = "col-md-6">
-			<h1 class="containerTop">Watercolor</h1>
+		<div class = "col-md-6 align-self-center text-center">
+			{{!-- class="containerTop" --}}
+			<h1 >Watercolor</h1>
 		</div>
-		<div class = "col-md-3">
-			<img class="containerRight icon" src="https://cdn2.iconfinder.com/data/icons/ui-thick-lines/620/share_android-512.png" alt="share icon">
+		<div class = "col-md-3 align-self-center">
+			{{!-- class="containerRight icon" --}}
+			<h1 class="fas fa-share-alt  float-right"></h1>
 		</div>
 	</div>
 	<div class = "row">
-		<div class = "col-md-2">
-			<img class = "profilePic"src="https://i.pinimg.com/originals/34/62/d2/3462d27440aa255b1c314ff16f4032b4.png" alt="share icon">
+		{{!-- <div class = "col-md-2"> --}}
+			{{!-- <img src="" alt="share icon"> --}}
+		<div class="col-md-4" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="https://i.pinimg.com/originals/34/62/d2/3462d27440aa255b1c314ff16f4032b4.png" class="img-fluid" alt="Responsive image">
+    	</div>
+		<div class = "col-md-2 align-self-center">
+			<h1>Jane D.</h1>
 		</div>
-		<div class = "col-md-4">
-			<h1 class = "profileName">Jane D.</h1>
-		</div>
-		<div class = "col-md-6">
+		<div class = "col-md-6 align-self-center">
 			<div class="container">
 				<div class="star-widget">
 					<input type = "radio" name = "rate" id="rate-5">
@@ -43,9 +47,6 @@
 		</div>
 	</div>
 	<br>
-	{{!-- <div class="row">
-		<img class = "watercolor" src="https://i.pinimg.com/originals/98/c2/58/98c25874fd4e8b13fc66be3c7853e825.jpg" alt="watercolor photo">
-	</div> --}}
 
 	<div class="container-fluid no-padding">
 	<div class="row">
