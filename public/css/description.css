@@ -48,3 +48,8 @@ object-fit: cover;
 .col-sm-1{
     background-color: #FBFDFF;
 }
+
+p.container.lead{
+    background-image: linear-gradient(to bottom, #D8F6F6 0, #FCEBE8 100%);
+
+}
