@@ -16,10 +16,19 @@ html, body{
 
 .buttonsTop{
     padding-top: 7%;
+    width: 200%; 
     padding-bottom: 7%;
+    padding-left: 0%;
+    padding-right: 90%;
+    align-items: center;
+    justify-content: center; 
 }
 .buttonsBottom{
   padding: 0% 0%;
+  width: 200%; 
+  padding-right: 90%;
+  align-items: center;
+  justify-content: center; 
 }
 
 p{
@@ -50,7 +59,7 @@ p{
 }
 
 .watercolor{
-  height:39%;
+  height:35%;
   padding-left: 6%;
   padding-right: 12%;
 }
@@ -84,8 +93,8 @@ p{
     background: rgb(210, 245, 255);
     padding-top: 20%;
     padding-bottom: 20%;
-    padding-right: 35%;
-    padding-left: 85%;
+    padding-right: 45%;
+    padding-left: 100%;
     /* border: 1px solid rgb(59, 91, 97); */
     float: right;
     /* border-radius: 5px; */
