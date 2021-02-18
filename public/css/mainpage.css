@@ -1,11 +1,14 @@
-* {box-sizing: border-box;}
+#original {box-sizing: border-box;}
 
 body{
   margin:0;
-  padding: 0;
-  background: #3498db
+  padding-top: 50px;
+  background: #9ADFDD;
 }
-
+.breadcrumb{
+    background: #F2F9FC;
+    padding:4px 10px;
+}
 .search-box{
   position: absolute;
   left: 50%;
@@ -137,4 +140,44 @@ body{
   width: 2px;
   background: #3498db;
   z-index: 10;
+}
+
+.navbar-header img{
+    height:100%;
+}
+
+.navbar-brand{
+    padding-top:0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#lg{
+    padding: 5px;
+}
+ 
+section .row img {
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+/* .row#short img{
+    height: 117.5px;
+    object-fit: cover;
+} */
+
+.col-sm-3{
+  padding-left:5px;
+  padding-right: 5px;
+}
+
+/* figure.col-sm-3{
+  background-color: #ecf0f1;
+} */
+
+.navbar-default .navbar-nav>.active>a{
+    color: #FBFDFF; 
+    background: #FF603F;
+    /* background-image: linear-gradient(to bottom, ##FF603F 0, ##FF603F 100%); */
 }

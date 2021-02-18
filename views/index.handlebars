@@ -1,74 +1,125 @@
-
 <html>
-	<head>
-		<title>Art Comissioner</title>
-		<link href="/css/mainpage.css" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/c4240f549f.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="js/main.js"></script>
-	</head>
-	<body>
-		<div clas="topnav">
-			<div class="search-box">
-				<input class="search-txt" type="text" name="" placeholder="" >
-				<div class="search-btn">
-					<i class="fas fa-search fa-2x"></i>
-				</div>
-			</div>
-			<div class="hamburger-menu">
-				<i class="fas fa-bars fa-5x"></i>
-			</div>	
-		</div>
 
-		<div class="middle-nav">
-			<div class="gallary" id="left">
-				<div class="frame">
-					<img src="images/Lilie.jpg" class="picture" id = "1">	
-				</div>
-				<div class="frame">
-					<img src="images/monalisa.jpg" class="picture" id = "2">	
-				</div>
-				<div class="frame">
-					<img src="images/sunflower.jpg" class="picture" id = "3">	
-				</div>
-				<div class="frame">
-					<img src="images/starrynight.jpg" class="picture" id = "4">
-				</div>
-				
+<head>
+	<title>Art Commissioner Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="/css/mainpage.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c4240f549f.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/masonry.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img id='lg' alt="Brand" src="/images/Oval.png">
+				</a>
 			</div>
-			<div class="gallary" id="right">
-				<div class="frame">
-					<img src="images/sunflower.jpg" class="picture" id = "3">	
-				</div>
-				<div class="frame">
-					<img src="images/Lilie.jpg" class="picture" id = "1">	
-				</div>
-				<div class="frame">
-					<img src="images/starrynight.jpg" class="picture" id = "4">
-				</div>
-				<div class="frame">
-					<img src="images/monalisa.jpg" class="picture" id = "2">	
-				</div>
-				
-			</div>
+			<ul class="nav navbar-nav navbar-left">
+				<li class="active"><a href="#">Home</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Profile</a></li>
+				<li><a href=" #">Messages</a></li>
+			</ul>
 		</div>
-		
-		<div class="bottom-nav">
-			<div class="bottom-child" id="sun">
-				<i class="far fa-sun fa-4x" ></i>
-			</div>
-			<div class="line"></div>
-			<div class="bottom-child" id="home">
-				<i class="fas fa-home fa-4x"></i>
-			</div>
-			<div class="line"></div>
-			<div class="bottom-child" id="chat">
-				<i class="fas fa-comment-dots fa-4x"></i>
-			</div>
-			<div class="line"></div>
-			<div class="bottom-child" id="user">
-				<i class="fas fa-user-alt fa-4x"></i>
-			</div>
+	</nav>
+	<ol class="breadcrumb">
+		<li class="active"><a href="#">Home</a></li>
+	</ol>
+	<section class="container">
+		<div class="row" id="short">
+			<figure class="col-sm-3">
+				<img class="img-fluid" src="/images/starrynight.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/Lilie.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/starrynight.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/Lilie.jpg" />
+			</figure>
 		</div>
-	</body>
+		<div class="row" id="long">
+			<figure class="col-sm-3">
+				<img src="/images/sunflower.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/monalisa.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/sunflower.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/monalisa.jpg" />
+			</figure>
+		</div>
+		<div class="row" id="short">
+			<figure class="col-sm-3">
+				<img class="img-fluid" src="/images/starrynight.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/Lilie.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/starrynight.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/Lilie.jpg" />
+			</figure>
+		</div>
+		<div class="row" id="long">
+			<figure class="col-sm-3">
+				<img src="/images/sunflower.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/monalisa.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/sunflower.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/monalisa.jpg" />
+			</figure>
+		</div>
+		<div class="row" id="short">
+			<figure class="col-sm-3">
+				<img class="img-fluid" src="/images/starrynight.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/Lilie.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/starrynight.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/Lilie.jpg" />
+			</figure>
+		</div>
+		<div class="row" id="long">
+			<figure class="col-sm-3">
+				<img src="/images/sunflower.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/monalisa.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/sunflower.jpg" />
+			</figure>
+			<figure class="col-sm-3">
+				<img src="/images/monalisa.jpg" />
+			</figure>
+		</div>
+	</section>
+</body>
+
 </html>
