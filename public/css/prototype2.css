@@ -10,13 +10,13 @@ html, body{
     display: grid;
 }
 
-.icon{
+/* .icon{
     height: 10%;
-}
+} */
 
 .buttonsTop{
     padding-top: 7%;
-    width: 200%; 
+    /* width: 200%;  */
     padding-bottom: 7%;
     padding-left: 0%;
     padding-right: 90%;
@@ -25,7 +25,7 @@ html, body{
 }
 .buttonsBottom{
   padding: 0% 0%;
-  width: 200%; 
+  /* width: 200%;  */
   padding-right: 90%;
   align-items: center;
   justify-content: center; 
@@ -36,7 +36,7 @@ p{
 }
 
 .containerLeft{
-    height:94%;
+    height:150px;
     background-size: cover;
     background: rgb(210, 245, 255);
     padding-top: 15%;
@@ -94,7 +94,7 @@ p{
     padding-top: 20%;
     padding-bottom: 20%;
     padding-right: 45%;
-    padding-left: 100%;
+    padding-left: 50%;
     /* border: 1px solid rgb(59, 91, 97); */
     float: right;
     /* border-radius: 5px; */
@@ -102,6 +102,11 @@ p{
     align-items: right;
     justify-content: right;
     /* flex-direction: column; */
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .containerBottom{
@@ -122,18 +127,11 @@ p{
 }
 
 .buttonLeft{
-  padding-left: 41%;
-  padding-right: 50%;
   height: 150px;
-  /* width: 500px; */
-  font-size: 300%;
 }
 
 .buttonRight{
-  padding-left: 44%;
-  padding-right: 55%;
   height: 150px;
-  font-size: 300%;
 }
 
 .container .star-widget{
@@ -220,4 +218,8 @@ p{
 
 .twoButtons{
   padding-bottom: 3%;
+}
+
+.btn-primary{
+  width: 100%;
 }
