@@ -8,38 +8,26 @@
 
 html, body{
     display: grid;
-    /* height: 80%; */
-    /* place-items: center; */
-    /* text-align: center; */
-    /* background: #000; */
 }
 
 .icon{
-    height: 60px;
-}
-.container{
-    /* position: absolute; */
-    /* top: 45%; */
-    /* top: 20%; */
-    /* left: 50%; */
-    /* left: 70%; */
-    /* transform: translate(-50%, -50%); */
+    height: 10%;
 }
 
 .buttonsTop{
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .buttonsBottom{
-  padding: 0px 0px;
+  padding: 0% 0%;
 }
 
 p{
-    font-size: 60px;
+    font-size: 8%;
 }
 
 .containerLeft{
-    height:150px;
+    height:94%;
     background-size: cover;
     background: rgb(210, 245, 255);
     padding-top: 15%;
@@ -55,14 +43,14 @@ p{
 
 .profilePic{
     /* height: 40%; */
-    height:160px;
+    height:88%;
     padding-left: 70%;
     padding-top: 20%;
     place-items: right;
 }
 
 .watercolor{
-  height:640px;
+  height:35%;
   padding-left: 6%;
   padding-right: 12%;
 }
@@ -80,7 +68,7 @@ p{
     height:150px;
     background-size: cover;
     background: rgb(210, 245, 255);
-    padding: 20px 0px;
+    padding: 10% 10%;
     /* border: 1px solid rgb(59, 91, 97); */
     /* border-radius: 5px; */
     display: flex;
