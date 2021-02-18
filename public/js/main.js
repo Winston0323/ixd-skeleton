@@ -12,5 +12,6 @@ function initializePage() {
 	$(".frame").click(projectClick);
 }
 function projectClick(e){
-	
+	window.location.replace(window.location.href + "description");
+
 }
