@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Description</title>
+    <title>Artist Description</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -11,14 +11,14 @@
     <link href="/css/mainpage.css" rel="stylesheet">
     <link href="/css/description.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand home" href="#">
                     <img id='lg' alt="Brand" src="/images/Oval.png">
                 </a>
             </div>
@@ -29,23 +29,23 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Profile</a></li>
-                <li><a href=" #">Messages</a></li>
+                <li><a href="#">Messages</a></li>
             </ul>
         </div>
     </nav>
     <ol class="breadcrumb">
-        <li class="inactive">
+        <li class="inactive home">
             <a href="#">Home</a>
         </li>
-        <li class="active"><a href="#">Product Description</a></li>
+        <li class="active"><a href="#">Artist</a></li>
     </ol>
     <section class="container-fluid">
         <div class="row" id="head">
-            <div class="col-sm-1"></div>
-            <figure class="col-sm-10">
+            <div class="col-sm-2"></div>
+            <figure class="col-sm-8">
                 <img class="img-fluid" id="h1" src="/images/starrynight.jpg" />
             </figure>
-            <div class="col-sm-1"></div>
+            <div class="col-sm-2"></div>
         </div>
     </section>
     <br>
@@ -55,19 +55,18 @@
         <li role="presentation"><a href="#">Availability</a></li>
         <li role="presentation"><a href="#">Pricing</a></li>
     </ul>
-    <p class="container lead"><br>
-        <br>Watercolor (American English) or watercolour
-        (British English; see spelling differences), also aquarelle (French, from Italian diminutive of
-        Latin aqua "water"),[1] is a painting
-        method in which the paints are made of pigments suspended in a water-based solution. Watercolor
-        refers to both the medium and the resulting
-        artwork. Aquarelles painted with water-soluble colored ink instead of modern water colors are
-        called
-        "aquarellum atramento" (Latin for
-        "aquarelle made with ink") by experts. However, this term has been more and more passing out of
-        use.[2][3]<br>
+
+    <p class="container lead">
+        <br>
+        <br>
+        {{artistName}}
+        <br>
         <br><br>
     </p>
+    {{!--
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/desciption.js"></script> --}}
 </body>
 
 </html>

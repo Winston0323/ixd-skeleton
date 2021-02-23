@@ -1,0 +1,44 @@
+{
+    "artists": [
+        {
+            "name": "Starry Night",
+            "id": "artist1",
+            "image": "starrynight.jpg"
+        },
+        {
+            "name": "Lilie",
+            "id": "artist2",
+            "image": "Lilie.jpg"
+        },
+        {
+            "name": "Starry Night",
+            "id": "artist1",
+            "image": "starrynight.jpg"
+        },
+        {
+            "name": "Lilie",
+            "id": "artist2",
+            "image": "Lilie.jpg"
+        },
+        {
+            "name": "Sunflower",
+            "id": "artist3",
+            "image": "sunflower.jpg"
+        },
+        {
+            "name": "Monalisa",
+            "id": "artist4",
+            "image": "monalisa.jpg"
+        },
+        {
+            "name": "Sunflower",
+            "id": "artist3",
+            "image": "sunflower.jpg"
+        },
+        {
+            "name": "Monalisa",
+            "id": "artist4",
+            "image": "monalisa.jpg"
+        }
+    ]
+}

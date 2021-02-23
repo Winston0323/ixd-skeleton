@@ -36,8 +36,10 @@ body{
     background:#9ADFDD ;
 }
 
-img#h1.img-fluid{
+#h1.img-fluid{
 object-fit: cover;
+/* height: 100%;
+width:auto; */
 }
 
 .nav-tabs>li.active>a{

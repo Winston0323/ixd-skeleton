@@ -8,7 +8,6 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="/css/mainpage.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/c4240f549f.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/masonry.js"></script>
@@ -18,108 +17,35 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand home" href="#">
 					<img id='lg' alt="Brand" src="/images/Oval.png">
 				</a>
 			</div>
 			<ul class="nav navbar-nav navbar-left">
-				<li class="active"><a href="localhost:3000">Home</a></li>
+				<li class="active home"><a href="localhost:3000">Home</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#">Profile</a></li>
-				<li><a href=" #">Messages</a></li>
+				<li><a href="#">Messages</a></li>
 			</ul>
 		</div>
 	</nav>
 	<ol class="breadcrumb">
-		<li class="active"><a href="#">Home</a></li>
+		<li class="active home"><a href="#">Home</a></li>
 	</ol>
 	<section class="container">
-		<div class="row" id="short">
-			<figure class="col-sm-3">
-				<img class="img-fluid" src="/images/starrynight.jpg" />
+		<div class="row">
+			{{#each artists}}
+			<figure class="col-sm-3" id="{{id}}">
+				<a href="artist/{{name}}">
+					<img class="img-fluid" src="images/{{image}}" />
+				</a>
 			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/Lilie.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/starrynight.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/Lilie.jpg" />
-			</figure>
-		</div>
-		<div class="row" id="long">
-			<figure class="col-sm-3">
-				<img src="/images/sunflower.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/monalisa.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/sunflower.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/monalisa.jpg" />
-			</figure>
-		</div>
-		<div class="row" id="short">
-			<figure class="col-sm-3">
-				<img class="img-fluid" src="/images/starrynight.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/Lilie.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/starrynight.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/Lilie.jpg" />
-			</figure>
-		</div>
-		<div class="row" id="long">
-			<figure class="col-sm-3">
-				<img src="/images/sunflower.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/monalisa.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/sunflower.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/monalisa.jpg" />
-			</figure>
-		</div>
-		<div class="row" id="short">
-			<figure class="col-sm-3">
-				<img class="img-fluid" src="/images/starrynight.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/Lilie.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/starrynight.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/Lilie.jpg" />
-			</figure>
-		</div>
-		<div class="row" id="long">
-			<figure class="col-sm-3">
-				<img src="/images/sunflower.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/monalisa.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/sunflower.jpg" />
-			</figure>
-			<figure class="col-sm-3">
-				<img src="/images/monalisa.jpg" />
-			</figure>
+			{{/each}}
 		</div>
 	</section>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

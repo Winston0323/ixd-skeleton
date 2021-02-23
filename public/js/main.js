@@ -1,7 +1,7 @@
 'use strict';
 var home = "http://localhost:3000"
 // Call this function when the page loads (the "ready" event)
-$(document).ready(function() {
+$(document).ready(function () {
 	initializePage();
 })
 
@@ -10,14 +10,14 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
-	$(".col-sm-3").click(projectClick);
+	// $("#thumbnail").click(projectClick);
 	$(".home").click(projectClick1);
 }
-function projectClick(e){
+function projectClick(e) {
 	window.location.replace(window.location.href + "description");
 
 }
-function projectClick1(e){
+function projectClick1(e) {
 	console.log(window.location.href);
 	window.location.replace(home);
 	console.log("click");
