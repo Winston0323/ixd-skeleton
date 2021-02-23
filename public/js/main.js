@@ -19,6 +19,7 @@ function projectClick(e){
 }
 function projectClick1(e){
 	console.log(window.location.href);
-	window.location.replace(home);
 	console.log("click");
+	window.location.replace(home);
+
 }
