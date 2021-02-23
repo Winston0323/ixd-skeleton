@@ -28,9 +28,9 @@ padding-right: 0;
 padding-left: 0;
 }
 
-body{
+/* body{
   padding-top: 50px;
-}
+} */
 .breadcrumb{
     margin-bottom: 0;
     background:#9ADFDD ;
@@ -53,5 +53,9 @@ width:auto; */
 
 p.container.lead{
     background-image: linear-gradient(to bottom, #D8F6F6 0, #FCEBE8 100%);
+}
+
+p#paragraph{
+        background-image: linear-gradient(to bottom, #D8F6F6 0, #FCEBE8 100%);
 
 }

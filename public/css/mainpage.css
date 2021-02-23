@@ -2,7 +2,6 @@
 
 body{
   margin:0;
-  padding-top: 50px;
   background: #9ADFDD;
 }
 .breadcrumb{
@@ -155,6 +154,8 @@ body{
 
 #lg{
     padding: 5px;
+    width: 50px;
+    height: 50px;
 }
  
 section .row img {
@@ -180,4 +181,8 @@ section .row img {
     color: #FBFDFF; 
     background: #FF603F;
     /* background-image: linear-gradient(to bottom, ##FF603F 0, ##FF603F 100%); */
+}
+
+.nav-link {
+    display: inline-block;
 }
