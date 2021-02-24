@@ -13,30 +13,40 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="#">
-                    <img id='lg' alt="Brand" src="/images/Oval.png">
-                </a>
-            </div>
-            <div class="home">
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="inactive"><a href="#">Home</a></li>
-                </ul>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
+    <nav class="navbar navbar-expand bg-light fixed-top shadow-sm">
+        <a class="navbar-brand" href="#">
+            <img class="home" id='lg' alt="Brand logo" src="/images/Oval.png">
+        </a>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Log In</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div>
     </nav>
-    <ol class="breadcrumb">
-        <li class="inactive home">
-            <a href="#">Home</a>
-        </li>
-        <li class="active"><a href="#">Artist</a></li>
-    </ol>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item home"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artist</li>
+        </ol>
+    </nav>
     <section class="container-fluid">
         <div class="row" id="head">
             <div class="col-sm-2"></div>
@@ -63,10 +73,11 @@
             <br>
         </p>
     </div>
-    {{!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    {{!--
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

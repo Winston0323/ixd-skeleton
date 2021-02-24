@@ -1,12 +1,18 @@
 #original {box-sizing: border-box;}
 
 body{
+  padding:0;
+  padding-top: 66px;
   margin:0;
   background: #9ADFDD;
 }
 .breadcrumb{
     background: #F2F9FC;
-    padding:4px 10px;
+    display: block;
+}
+li.breadcrumb-item{
+    /* background: #F2F9FC; */
+    display: inline-block;
 }
 .search-box{
   position: absolute;
@@ -45,18 +51,8 @@ body{
   width: 500px;
   z-index: 10;
 }
-.search-box:hover{
-  background: white;
-  transition: background-color 400ms linear;
-}
-/*.search-box:hover > .search-txt{
-  width: 500px;
-  padding: 0 10px;
-  background: white;
-}
-*/
-.search-box:hover > .search-btn{
-  color: black;
+a:hover {
+    color: #FF603F;
 }
 
 .hamburger-menu{
@@ -173,11 +169,11 @@ section .row img {
   padding-right: 5px;
 }
 
-/* figure.col-sm-3{
-  background-color: #ecf0f1;
-} */
+figure{
+  margin: 0;
+}
 
-.navbar-default .navbar-nav>.active>a{
+.nav-link.active{
     color: #FBFDFF; 
     background: #FF603F;
     /* background-image: linear-gradient(to bottom, ##FF603F 0, ##FF603F 100%); */
