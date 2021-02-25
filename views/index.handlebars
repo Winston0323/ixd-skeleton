@@ -15,18 +15,19 @@
 		<a class="navbar-brand" href="#">
 			<img class="home" id='lg' alt="Brand logo" src="/images/Oval.png">
 		</a>
-		<ul class="navbar-nav justify-content-end">
+		<ul class="navbar-nav me-auto">
 			<li class="nav-item">
-				<a class="nav-link active home" aria-current="page" href="http://localhost:3000">Home</a>
+				<a class="nav-link active home" aria-current="page" href=".">Home</a>
 			</li>
-
+		</ul>
+		<ul class="navbar-nav">
 			<li class="nav-item dropdown">
 				<a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false">
 					Profile
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li><a class="dropdown-item" href="#">Log In</a></li>
+					<li><a class="dropdown-item" href="availability">Calendar</a></li>
 					<li><a class="dropdown-item" href="#">Sign Up</a></li>
 					<li>
 						<hr class="dropdown-divider">
@@ -56,6 +57,11 @@
 			{{/each}}
 		</div>
 	</section>
+	<a class="btn btn-primary" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+			fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+		</svg></a>
 	{{!--
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -70,7 +76,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
-	<script src="js/masonry.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+		integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+		async></script>
 	<script src="js/main.js"></script>
 </body>
 

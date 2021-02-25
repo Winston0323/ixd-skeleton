@@ -159,11 +159,6 @@ section .row img {
   width: 100%;
 }
 
-/* .row#short img{
-    height: 117.5px;
-    object-fit: cover;
-} */
-
 .col-sm-3{
   padding-left:5px;
   padding-right: 5px;
@@ -185,4 +180,19 @@ figure{
 
 #right {
   margin-left: auto;
+}
+
+.navbar-expand{
+  justify-content: space-between;
+}
+
+.btn{
+  bottom: 1rem;
+  right: 1rem;
+  position: fixed;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #FF603F;
+    border-color: #FF603F;
 }
