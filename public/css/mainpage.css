@@ -186,3 +186,7 @@ figure{
 #right {
   margin-left: auto;
 }
+
+.navbar-expand{
+  justify-content: space-between;
+}
