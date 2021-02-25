@@ -12,6 +12,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.4.0",
     "express": "3.x",
     "express3-handlebars": "*",
     "masonry-layout": "^4.2.2",
