@@ -39,8 +39,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/artist/:name', artist.viewArtist);
-app.get('/chat', chat.view);
+app.get('/artist/:name&:artist', artist.viewArtist);
+app.get('/artist/:name&:artist/chat', chat.viewChat);
 app.get('/availability', avail.viewAvail);
 
 http.createServer(app).listen(app.get('port'), function () {

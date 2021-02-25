@@ -29,7 +29,7 @@
                     Profile
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="availability">Calendar</a></li>
+                    <li><a class="dropdown-item" href="../availability">Calendar</a></li>
                     <li><a class="dropdown-item" href="#">Sign Up</a></li>
                     <li>
                         <hr class="dropdown-divider">
@@ -45,7 +45,7 @@
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item home"><a href="http://localhost:3000">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Artist</li>
+            <li class="breadcrumb-item active" aria-current="page">{{artist}}</li>
         </ol>
     </nav>
     <section class="container-fluid">
@@ -78,7 +78,7 @@
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <p>
                 <br>
-                {{artistName}}
+                {{artist}}
                 <br>
                 <br>
             </p>
@@ -86,7 +86,7 @@
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <p>
                 <br>
-                Artist has set pricing to private. Please Message for pricing.
+                Artist has set pricing to private. Please <a href="{{name}}&{{artist}}/chat">Message</a> for pricing.
                 <br>
                 <br>
             </p>

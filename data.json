@@ -1,26 +1,31 @@
 {
     "artists": [
         {
+            "artist": "V.G.",
             "name": "Starry Night",
             "id": "artist1",
             "image": "starrynight.jpg"
         },
         {
+            "artist": "J.D.",
             "name": "Lilie",
             "id": "artist2",
             "image": "Lilie.jpeg"
         },
         {
+            "artist": "V.G.",
             "name": "Starry Night",
             "id": "artist1",
             "image": "starrynight.jpg"
         },
         {
+            "artist": "J.D.",
             "name": "Lilie",
             "id": "artist2",
             "image": "Lilie.jpeg"
         },
         {
+            "artist": "H.V.",
             "name": "Sunflower",
             "id": "artist3",
             "image": "sunflower.jpg"
@@ -41,21 +46,25 @@
             "image": "monalisa.jpg"
         },
         {
+            "artist": "V.G.",
             "name": "Starry Night",
             "id": "artist1",
             "image": "starrynight.jpg"
         },
         {
+            "artist": "J.D.",
             "name": "Lilie",
             "id": "artist2",
             "image": "Lilie.jpeg"
         },
         {
+            "artist": "V.G.",
             "name": "Starry Night",
             "id": "artist1",
             "image": "starrynight.jpg"
         },
         {
+            "artist": "J.D.",
             "name": "Lilie",
             "id": "artist2",
             "image": "Lilie.jpeg"
