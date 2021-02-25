@@ -11,6 +11,7 @@ A5\
 
 style & script:
 Bootstrap 5.0: https://getbootstrap.com/docs/5.0/getting-started/introduction/ 
+https://thomas.vanhoutte.be/miniblog/make-google-calendar-iframe-responsive/ (for Google Calendar responsiveness)
 
 Image:
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpapertip.com%2Fwpic%2FbbRwoT_starry-night-art-plain-wall-murals-starry-night%2F&psig=AOvVaw1cbp8gXsFrQ6YeRgYTQS5i&ust=1614314589407000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiX5NCchO8CFQAAAAAdAAAAABAD
