@@ -31,16 +31,19 @@
             "image": "sunflower.jpg"
         },
         {
+            "artist": "D.C.",
             "name": "Monalisa",
             "id": "artist4",
             "image": "monalisa.jpg"
         },
         {
+            "artist": "H.V.",
             "name": "Sunflower",
             "id": "artist3",
             "image": "sunflower.jpg"
         },
         {
+            "artist": "D.C.",
             "name": "Monalisa",
             "id": "artist4",
             "image": "monalisa.jpg"
@@ -70,21 +73,25 @@
             "image": "Lilie.jpeg"
         },
         {
+            "artist": "H.V.",
             "name": "Sunflower",
             "id": "artist3",
             "image": "sunflower.jpg"
         },
         {
+            "artist": "D.C.",
             "name": "Monalisa",
             "id": "artist4",
             "image": "monalisa.jpg"
         },
         {
+            "artist": "H.V.",
             "name": "Sunflower",
             "id": "artist3",
             "image": "sunflower.jpg"
         },
         {
+            "artist": "D.C.",
             "name": "Monalisa",
             "id": "artist4",
             "image": "monalisa.jpg"
