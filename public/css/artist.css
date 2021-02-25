@@ -42,9 +42,10 @@ object-fit: cover;
 width:auto; */
 }
 
-.nav-tabs>li.active>a{
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color:#FBFDFF;
     background-color: #FF603F;
+    border-color: #FF603F;
 }
 
 .col-sm-1{
@@ -55,7 +56,7 @@ p.container.lead{
     background-image: linear-gradient(to bottom, #D8F6F6 0, #FCEBE8 100%);
 }
 
-p#paragraph{
+.tab-content p{
         background-image: linear-gradient(to bottom, #D8F6F6 0, #FCEBE8 100%);
 
 }

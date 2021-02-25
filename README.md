@@ -8,3 +8,6 @@ Project Description\
 A5\
 	Basic flow on the Main page\
 	click any picture to enter description page\
+
+style & script:
+Bootstrap 5.0: https://getbootstrap.com/docs/5.0/getting-started/introduction/ 
