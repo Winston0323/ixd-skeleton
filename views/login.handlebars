@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Login page</title>
+    <title>Artist Description</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,54 +17,55 @@
         <a class="navbar-brand" href="#">
             <img class="home" id='lg' alt="Brand logo" src="/images/Oval.png">
         </a>
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link home" aria-current="page" href="http://localhost:3000">Home</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Profilesss
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="login">Log In</a></li>
-                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Log Out</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Messages</a>
-            </li>
-        </ul>
+        <div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Profile
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="login">Log In</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Messages</a>
+                </li>
+            </ul>
     </nav>
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item home"><a href="http://localhost:3000">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Login</li>
+            <li class="breadcrumb-item home"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Login/Sign up</li>
         </ol>
     </nav>
-    <section class="container-fluid">
-        <div class="row" id="head">
-            <div class="col-sm-4"></div>
-            <figure class="col-sm-4">
-                {{!-- class="img-fluid" --}}
-                <img id="h1" src="https://banner2.cleanpng.com/20180728/sac/kisspng-computer-icons-user-symbol-light-client-icon-5b5cfd0bbe3066.907360791532820747779.jpg">
-            </figure>
-            <div class=" col-sm-4">
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
+    <div class="container-fluid" id="paragraph">
+<div class="imgcontainer">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3lfb4Bj1Ojyz4HQYu_J2KcOw3dNDIPVhOg&usqp=CAU" alt="Avatar" class="avatar">
+  </div>
 
+  <div class="container">
+    <label for="uname"><b></b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b></b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
