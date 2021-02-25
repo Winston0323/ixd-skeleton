@@ -1,12 +1,12 @@
 {
     "order": [
         {
-            "a": "PORTAIT",
+            "name": "PORTAIT",
             "artist": "V.G.",
             "status": "Finished"
         },
         {
-        	"a": "A",
+        	"name": "A",
         	"artist": "C.M.",
             "status": "In Progress"
         }
