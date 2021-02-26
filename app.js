@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var messages = require('./routes/messages');
 var artist = require('./routes/artist');
 var chat = require('./routes/chat');
+var send = require("./routes/send");
 var avail = require('./routes/availability');
 // var description1 = require('./routes/description1');
 // Example route
@@ -44,6 +45,7 @@ app.get('/messages', messages.viewMessages);
 app.get('/artist/:name&:artist', artist.viewArtist);
 app.get('/artist/:name&:artist/chat', chat.viewChat);
 app.get('/availability', avail.viewAvail);
+app.get('/artist/:name&:artist/chat/send', send.sendText)
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));

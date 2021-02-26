@@ -9,7 +9,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="/css/mainpage.css" rel="stylesheet">
 	<link href="/css/chat.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/c4240f549f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,12 +50,12 @@
 	</nav>
 	<div class="chat-panel">
 		<section class="container">
+			{{#each text}}
 			<div class="row no-gutter">
 				<div class="col-sm-3">
 					<div class="message--right">
-
 						<div class="chat-bubble chat-bubble--right">
-							What's your price for a normal sized piece?
+							{{this.right}}
 						</div>
 						<div class="user-icon--right">
 							<i class="fas fa-user-alt" id="user"></i>
@@ -71,84 +70,28 @@
 							<i class="fas fa-user-alt" id="user"></i>
 						</div>
 						<div class="chat-bubble chat-bubble--left">
-							It will be around $100 or so?
+							{{this.left}}
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row no-gutter">
-				<div class="col-sm-3">
-					<div class="message--left">
-						<div class="user-icon--left">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-						<div class="chat-bubble chat-bubble--left">
-							Depend on the details though.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row no-gutter">
-				<div class="col-sm-3">
-					<div class="message--right">
-						<div class="chat-bubble chat-bubble--right">
-							Good to know!
-						</div>
-						<div class="user-icon--right">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row no-gutter">
-				<div class="col-sm-3">
-					<div class="message--left">
-						<div class="user-icon--left">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-						<div class="chat-bubble chat-bubble--left">
-							Here's the schedule
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row no-gutter">
-				<div class="col-sm-3">
-					<div class="message--right">
-						<div class="chat-bubble chat-bubble--right">
-							Thanks for update!
-						</div>
-						<div class="user-icon--right">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row no-gutter">
-				<div class="col-sm-3">
-
-					<div class="message--left">
-						<div class="user-icon--left">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-						<div class="chat-bubble chat-bubble--left">
-							<a herf="..">Final draft</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			{{/each}}
 		</section>
 	</div>
 	<div class="fixed-bottom">
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="chat-box-tray">
-					<input type="text" placeholder="Type your messages">
-					</input>
-					<div class="input-group-append">
-						<span class="input-group-text send_btn"><i class="fas fa-paper-plane"></i></i></span>
+				<form id="sendTextForm" role="form" method="get" action="/artist/{{name}}&{{artist}}/chat/send">
+					<div class="chat-box-tray">
+						<input type="text" id='text' name='text' placeholder="Type your messages">
+						</input>
+						<div class="input-group-append">
+							<button type="submit" class="btn btn-primary">
+								<i class="fas fa-paper-plane"></i>
+							</button>
+						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -167,6 +110,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/c4240f549f.js" crossorigin="anonymous"></script>
 	<script src="/js/masonry.js"></script>
 	<script src="/js/main.js"></script>
 </body>

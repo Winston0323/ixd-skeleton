@@ -1,20 +1,49 @@
 var data = require('../data.json');
+var chatData = require('../chat.json');
+var fs = require('fs');
 
 exports.viewChat = function (req, res) {
   var name = req.params.name;
   var artist = req.params.artist;
-  var img = 0;
-  for (var i = 0; i < data.artists.length; i++) {
-    var temp = data.artists[i];
-    if (temp.name == req.params.name) {
-      img = temp.image;
+  // var text = '';
+  var i;
+
+  // // console.log(artist);
+  for (i = 0; i < chatData.chat.length; i++) {
+    var temp = chatData.chat[i];
+    // console.log(temp.artist);
+    if (temp.artist == req.params.artist) {
+      // text = temp.text;
       break;
     }
+    if (i = chatData.chat.length - 1) {
+      // var obj = {
+      //   "artist": artist,
+      //   "name": name,
+      //   "text": []
+      // };
+      // // const cString = JSOn.stringify(c);
+      // fs.readFile(chatData, 'utf8', function readFileCallback(err, data) {
+      //   if (err) {
+      //     console.log(err);
+      //   } else {
+      //     obj = JSON.parse(data); //now it an object
+      //     obj.chat.push({
+      //       "artist": artist,
+      //       "name": name,
+      //       "text": []
+      //     }); //add some data
+      //     json = JSON.stringify(obj); //convert it back to json
+      //     fs.writeFile(chatData, json, 'utf8', callback); // write it back 
+      //   }
+      // });
+      chatData.chat.push({
+        "artist": artist,
+        "name": name,
+        "text": []
+      });
+    }
   }
-  console.log(img);
-  res.render('chat', {
-    "artist": artist,
-    "name": name,
-    "imageName": img
-  });
+  console.log("in chat: " + chatData.chat[i].artist);
+  res.render('chat', chatData.chat[i]);
 };
