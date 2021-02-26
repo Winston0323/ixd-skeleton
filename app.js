@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var add = require('./routes/add');
 var messages = require('./routes/messages');
 var order = require('./routes/order');
 var artist = require('./routes/artist');
@@ -44,6 +45,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/messages', messages.viewMessages);
 app.get('/order', order.viewOrder);
+app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
 app.get('/artist/:name&:artist/chat', chat.viewChat);
 app.get('/availability', avail.viewAvail);

@@ -29,7 +29,7 @@
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<li><a class="dropdown-item" href="availability">Calendar</a></li>
-					<li><a class="dropdown-item" href="order">Order</a></li>
+					<li><a class="dropdown-item" href="http://localhost:3000/order">Order</a></li>
 					<li><a class="dropdown-item" href="#">Sign Up</a></li>
 					<li>
 						<hr class="dropdown-divider">
@@ -38,7 +38,7 @@
 				</ul>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href=".">Messages</a>
+				<a class="nav-link" href="http://localhost:3000/messages">Messages</a>
 			</li>
 		</ul>
 	</nav>
@@ -77,6 +77,18 @@
 				</div>
 			</div>
 			{{/each}}
+			<div class="row no-gutter">
+				<div class="col-sm-3">
+					<div class="message--left">
+						<div class="user-icon--left">
+							<i class="fas fa-user-alt" id="user"></i>
+						</div>
+						<div class="chat-bubble chat-bubble--left">
+							<a href="http://localhost:3000/addOrder/{{artist}}">Final</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</div>
 	<div class="fixed-bottom">

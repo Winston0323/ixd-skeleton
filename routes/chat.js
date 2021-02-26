@@ -1,6 +1,6 @@
 var data = require('../data.json');
 var chatData = require('../chat.json');
-var fs = require('fs');
+var mes = require('../messages.json');
 
 exports.viewChat = function (req, res) {
   var name = req.params.name;
@@ -46,4 +46,24 @@ exports.viewChat = function (req, res) {
   }
   console.log("in chat: " + chatData.chat[i].artist);
   res.render('chat', chatData.chat[i]);
+  // console.log(img);
+  // res.render('chat', {
+  //   "artist": artist,
+  //   "name": name,
+  //   "imageName": img
+  // });
+
+  for (var i = 0; i < mes.messages.length; i++) {
+    var temp = mes.messages[i];
+    if (temp.name == artist) {
+      return;
+    }
+  }
+  var newMessage = {
+    "name": artist,
+    "title": "Hello",
+    "status": "read"
+  }
+  console.log(newMessage);
+  mes.messages.push(newMessage);
 };
