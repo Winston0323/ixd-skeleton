@@ -1,4 +1,5 @@
 Art Comissioner
+PLEASE USE INPHONE X AS RENDER DEVICE
 ====
 Installation guide\
 	npm install\
