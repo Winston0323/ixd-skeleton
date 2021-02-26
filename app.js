@@ -6,7 +6,8 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
+var add = require('./routes/add');
 
 var index = require('./routes/index');
 var artist = require('./routes/artist');
@@ -16,7 +17,6 @@ var login = require('./routes/login');
 // var user = require('./routes/user');
 
 var app = express();
-
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -40,6 +40,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/artist/:name', artist.viewArtist);
 app.get('/login', login.viewLogin);
+app.get('/add', add.addFriend);
 // app.get('/description1', description1.view);
 // Example route
 // app.get('/users', user.list);
