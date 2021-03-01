@@ -11,4 +11,9 @@ $(document).ready(function () {
 function initializePage() {
 	// add any functionality and listeners you want here
 	// $("#thumbnail").click(projectClick);
+	//$(".home").click(projectClick1);
+}
+function projectClick(e) {
+	window.location.replace(window.location.href + "description");
+
 }

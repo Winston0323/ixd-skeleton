@@ -1,47 +1,82 @@
 <html>
 
 <head>
-	<title>Art Commissioner Home</title>
+	<title>Home</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="/css/mainpage.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand home" href="#">
-					<img id='lg' alt="Brand" src="/images/Oval.png">
+	<nav class="navbar navbar-expand bg-light fixed-top shadow-sm">
+		<a class="navbar-brand" href="#">
+			<img class="home" id='lg' alt="Brand logo" src="/images/Oval.png">
+		</a>
+		<ul class="navbar-nav me-auto">
+			<li class="nav-item">
+				<a class="nav-link active home" aria-current="page" href="https://artcomission.herokuapp.com/">Home</a>
+			</li>
+		</ul>
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">
+					Profile
 				</a>
-			</div>
-			<ul class="nav navbar-nav navbar-left">
-				<li class="active home"><a href="http://localhost:3000">Home</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Profile</a></li>
-				<li><a href="#">Messages</a></li>
-			</ul>
-		</div>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="availability">Calendar</a></li>
+					<li><a class="dropdown-item" href="order">Order</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" href="login">Log Out</a></li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="messages">Messages</a>
+			</li>
+		</ul>
 	</nav>
-	<ol class="breadcrumb">
-		<li class="active home"><a href="http://localhost:3000">Home</a></li>
-	</ol>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item active" aria-current="page">Home</li>
+		</ol>
+	</nav>
 	<section class="container">
 		<div class="row">
 			{{#each artists}}
 			<figure class="col-sm-3" id="{{id}}">
-				<a href="artist/{{name}}">
+				<a href="artist/{{name}}&{{artist}}">
 					<img class="img-fluid" src="images/{{image}}" />
 				</a>
 			</figure>
 			{{/each}}
 		</div>
 	</section>
+	<a class="btn btn-primary" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+			fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+		</svg></a>
+	{{!--
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script> --}}
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+		integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+		async></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

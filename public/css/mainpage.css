@@ -1,13 +1,18 @@
 #original {box-sizing: border-box;}
 
 body{
+  padding:0;
+  padding-top: 66px;
   margin:0;
-  padding-top: 50px;
   background: #9ADFDD;
 }
 .breadcrumb{
     background: #F2F9FC;
-    padding:4px 10px;
+    display: block;
+}
+li.breadcrumb-item{
+    /* background: #F2F9FC; */
+    display: inline-block;
 }
 .search-box{
   position: absolute;
@@ -46,18 +51,8 @@ body{
   width: 500px;
   z-index: 10;
 }
-.search-box:hover{
-  background: white;
-  transition: background-color 400ms linear;
-}
-/*.search-box:hover > .search-txt{
-  width: 500px;
-  padding: 0 10px;
-  background: white;
-}
-*/
-.search-box:hover > .search-btn{
-  color: black;
+a:hover {
+    color: #FF603F;
 }
 
 .hamburger-menu{
@@ -155,6 +150,8 @@ body{
 
 #lg{
     padding: 5px;
+    width: 50px;
+    height: 50px;
 }
  
 section .row img {
@@ -162,22 +159,40 @@ section .row img {
   width: 100%;
 }
 
-/* .row#short img{
-    height: 117.5px;
-    object-fit: cover;
-} */
-
 .col-sm-3{
   padding-left:5px;
   padding-right: 5px;
 }
 
-/* figure.col-sm-3{
-  background-color: #ecf0f1;
-} */
+figure{
+  margin: 0;
+}
 
-.navbar-default .navbar-nav>.active>a{
+.nav-link.active{
     color: #FBFDFF; 
     background: #FF603F;
     /* background-image: linear-gradient(to bottom, ##FF603F 0, ##FF603F 100%); */
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+#right {
+  margin-left: auto;
+}
+
+.navbar-expand{
+  justify-content: space-between;
+}
+
+.btn{
+  bottom: 1rem;
+  right: 1rem;
+  position: fixed;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #FF603F;
+    border-color: #FF603F;
 }
