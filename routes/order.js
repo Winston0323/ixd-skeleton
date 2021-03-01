@@ -3,7 +3,7 @@
  * GET home page.
  */
 
-var data = require('../order.json');
+var data = require('../data.json');
 
 exports.viewOrder = function (req, res) {
     console.log(data);

@@ -1,4 +1,4 @@
-var chatData = require("../chat.json");
+var data = require("../data.json");
 
 exports.sendText = function (request, response) {
     // Your code goes here
@@ -7,11 +7,11 @@ exports.sendText = function (request, response) {
     var artist = request.params.artist;
     var newText = request.query.text;
     var i;
-    for (i = 0; i < chatData.chat.length; i++) {
-        var temp = chatData.chat[i];
+    for (i = 0; i < data.chat.length; i++) {
+        var temp = data.chat[i];
         // console.log(temp.artist);
         if (temp.artist == request.params.artist) {
-            chatData.chat[i].text.push({
+            data.chat[i].text.push({
                 "right": newText, "left": "Thanks for your message. AFK; BRB :)"
             });
             break;
@@ -27,6 +27,6 @@ exports.sendText = function (request, response) {
     // }
     // chatData.chat.push({ "text": text });
     // console.log(artist);
-    console.log(chatData.chat[i].text);
-    response.render("chat", chatData.chat[i]);
+    console.log(data.chat[i].text);
+    response.render("chat", data.chat[i]);
 }

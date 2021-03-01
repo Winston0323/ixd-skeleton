@@ -3,8 +3,7 @@
  * GET home page.
  */
 
-var order = require('../order.json');
-var mes = require('../messages.json');
+var data = require('../data.json');
 
 exports.addOrder = function (req, res) {
 	var artist = req.params.artist;
@@ -15,18 +14,18 @@ exports.addOrder = function (req, res) {
 		"artist": artist,
 		"status": status,
 	}
-	for (var i = 0; i < order.order.length; i++) {
-		var temp = order.order[i];
-		console.log(order.order.length);
+	for (var i = 0; i < data.order.length; i++) {
+		var temp = data.order[i];
+		console.log(data.order.length);
 		if (temp.artist == artist) {
 			console.log("inner i:" + i);
-			res.render('order', order);
+			res.render('order', data);
 			return;
 		}
 	}
-	order.order.push(newOrder);
+	data.order.push(newOrder);
 	console.log(newOrder);
-	res.render('order', order);
+	res.render('order', data);
 }
 // const { request } = require('express');
 // var data = require('../logindata.json');

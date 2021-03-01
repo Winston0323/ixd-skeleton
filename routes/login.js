@@ -1,5 +1,4 @@
 var data = require('../data.json');
-var logindata = require('../logindata.json');
 exports.viewLogin = function (req, res) {
   console.log(data);
   res.render('login');

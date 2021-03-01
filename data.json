@@ -96,5 +96,61 @@
             "id": "artist4",
             "image": "monalisa.jpg"
         }
+    ],
+    "chat": [
+        {
+            "artist": "V.G.",
+            "name": "Starry Night",
+            "text": [
+                {
+                    "right": "What's your price for a normal sized piece?",
+                    "left": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "right": "Good to know!",
+                    "left": "Here's the schedule"
+                }
+            ]
+        },
+        {
+            "artist": "J.D.",
+            "name": "Lilie",
+            "text": [
+                {
+                    "right": "What's your price for a normal sized piece?",
+                    "left": "It will be around $100 or so? Depend on the details though."
+                }
+            ]
+        },
+        {
+            "artist": "H.V.",
+            "name": "Lilie",
+            "text": []
+        },
+        {
+            "artist": "D.C.",
+            "name": "Lilie",
+            "text": []
+        } 
+
+    ],
+    "messages": [
+        {
+            "name": "Art Commissioner",
+            "title": "Welcome",
+            "status": "read"
+        }
+    ],
+    "order": [
+        {
+            "name": "PORTAIT",
+            "artist": "V.G.",
+            "status": "Finished"
+        },
+        {
+            "name": "A",
+            "artist": "C.M.",
+            "status": "In Progress"
+        }
     ]
 }

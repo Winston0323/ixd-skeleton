@@ -3,7 +3,7 @@
  * GET home page.
  */
 
-var data = require('../messages.json');
+var data = require('../data.json');
 
 exports.viewMessages = function (req, res) {
     console.log(data);

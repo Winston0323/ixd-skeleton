@@ -1,6 +1,4 @@
 var data = require('../data.json');
-var chatData = require('../chat.json');
-var mes = require('../messages.json');
 
 exports.viewChat = function (req, res) {
   var name = req.params.name;
@@ -9,14 +7,14 @@ exports.viewChat = function (req, res) {
   var i;
 
   // // console.log(artist);
-  for (i = 0; i < chatData.chat.length; i++) {
-    var temp = chatData.chat[i];
+  for (i = 0; i < data.chat.length; i++) {
+    var temp = data.chat[i];
     // console.log(temp.artist);
     if (temp.artist == req.params.artist) {
       // text = temp.text;
       break;
     }
-    if (i = chatData.chat.length - 1) {
+    if (i = data.chat.length - 1) {
       // var obj = {
       //   "artist": artist,
       //   "name": name,
@@ -37,15 +35,15 @@ exports.viewChat = function (req, res) {
       //     fs.writeFile(chatData, json, 'utf8', callback); // write it back 
       //   }
       // });
-      chatData.chat.push({
+      data.chat.push({
         "artist": artist,
         "name": name,
         "text": []
       });
     }
   }
-  console.log("in chat: " + chatData.chat[i].artist);
-  res.render('chat', chatData.chat[i]);
+  console.log("in chat: " + data.chat[i].artist);
+  res.render('chat', data.chat[i]);
   // console.log(img);
   // res.render('chat', {
   //   "artist": artist,
@@ -53,8 +51,8 @@ exports.viewChat = function (req, res) {
   //   "imageName": img
   // });
 
-  for (var i = 0; i < mes.messages.length; i++) {
-    var temp = mes.messages[i];
+  for (var i = 0; i < data.messages.length; i++) {
+    var temp = data.messages[i];
     if (temp.name == artist) {
       return;
     }
@@ -65,5 +63,5 @@ exports.viewChat = function (req, res) {
     "status": "read"
   }
   console.log(newMessage);
-  mes.messages.push(newMessage);
+  data.messages.push(newMessage);
 };
