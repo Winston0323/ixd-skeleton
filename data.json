@@ -2,105 +2,111 @@
     "artists": [
         {
             "artist": "V.G.",
-            "name": "Starry Night",
-            "id": "artist1",
-            "image": "starrynight.jpg"
+            "name": "Acrylic 1",
+            "id": "artist1a",
+            "image": "acrylic 1.jpeg"
+        },
+        {
+            "artist": "D.W.",
+            "name": "Cartoon 1",
+            "id": "artist1ca",
+            "image": "cartoon 1.jpg"
+        },
+        {
+            "artist": "A.G.",
+            "name": "Watercolor 3",
+            "id": "artist3w",
+            "image": "watercolor 3.jpg"
+        },
+        {
+            "artist": "O.L.",
+            "name": "Modern 1",
+            "id": "artist1m",
+            "image": "modern 1.jpg"
+        },
+        {
+            "artist": "S.A.",
+            "name": "Charcoal 1",
+            "id": "artist1ch",
+            "image": "charcoal 1.jpg"
         },
         {
             "artist": "J.D.",
-            "name": "Lilie",
-            "id": "artist2",
-            "image": "Lilie.jpeg"
+            "name": "Acrylic 2",
+            "id": "artist2a",
+            "image": "acrylic 2.jpg"
         },
         {
-            "artist": "V.G.",
-            "name": "Starry Night",
-            "id": "artist1",
-            "image": "starrynight.jpg"
+            "artist": "M.N.",
+            "name": "Pen 1",
+            "id": "artist1p",
+            "image": "pen 1.jpg"
         },
         {
-            "artist": "J.D.",
-            "name": "Lilie",
-            "id": "artist2",
-            "image": "Lilie.jpeg"
+            "artist": "U.G.F.",
+            "name": "Portrait 1",
+            "id": "artist1por",
+            "image": "portrait 1.jpg"
         },
         {
-            "artist": "H.V.",
-            "name": "Sunflower",
-            "id": "artist3",
-            "image": "sunflower.jpg"
-        },
-        {
-            "artist": "D.C.",
-            "name": "Monalisa",
-            "id": "artist4",
-            "image": "monalisa.jpg"
+            "artist": "S.D.",
+            "name": "Poster 1",
+            "id": "artist1pos",
+            "image": "poster 1.jpg"
         },
         {
             "artist": "H.V.",
-            "name": "Sunflower",
-            "id": "artist3",
-            "image": "sunflower.jpg"
+            "name": "Acrylic 3",
+            "id": "artist3a",
+            "image": "acrylic 3.jpg"
+        },
+        {
+            "artist": "U.O.",
+            "name": "Pottery 1",
+            "id": "artist1pot",
+            "image": "pottery 1.jpg"
+        },
+        {
+            "artist": "E.K.",
+            "name": "Watercolor 1",
+            "id": "artist1w",
+            "image": "watercolor 1.jpg"
+        },
+        {
+            "artist": "Y.P.",
+            "name": "Cartoon 2",
+            "id": "artist2ca",
+            "image": "cartoon 2.jpg"
         },
         {
             "artist": "D.C.",
-            "name": "Monalisa",
-            "id": "artist4",
-            "image": "monalisa.jpg"
+            "name": "Acrylic 4",
+            "id": "artist4a",
+            "image": "acrylic 4.jpg"
         },
         {
-            "artist": "V.G.",
-            "name": "Starry Night",
-            "id": "artist1",
-            "image": "starrynight.jpg"
+            "artist": "C.K.",
+            "name": "Charcoal 2",
+            "id": "artist2ch",
+            "image": "charcoal 2.jpg"
         },
         {
-            "artist": "J.D.",
-            "name": "Lilie",
-            "id": "artist2",
-            "image": "Lilie.jpeg"
+            "artist": "L.D.",
+            "name": "Pottery 2",
+            "id": "artist2pot",
+            "image": "pottery 2.jpg"
         },
         {
-            "artist": "V.G.",
-            "name": "Starry Night",
-            "id": "artist1",
-            "image": "starrynight.jpg"
-        },
-        {
-            "artist": "J.D.",
-            "name": "Lilie",
-            "id": "artist2",
-            "image": "Lilie.jpeg"
-        },
-        {
-            "artist": "H.V.",
-            "name": "Sunflower",
-            "id": "artist3",
-            "image": "sunflower.jpg"
-        },
-        {
-            "artist": "D.C.",
-            "name": "Monalisa",
-            "id": "artist4",
-            "image": "monalisa.jpg"
-        },
-        {
-            "artist": "H.V.",
-            "name": "Sunflower",
-            "id": "artist3",
-            "image": "sunflower.jpg"
-        },
-        {
-            "artist": "D.C.",
-            "name": "Monalisa",
-            "id": "artist4",
-            "image": "monalisa.jpg"
+            "artist": "G.M.",
+            "name": "Watercolor 2",
+            "id": "artist2w",
+            "image": "watercolor 2.jpg"
         }
     ],
     "chat": [
         {
             "artist": "V.G.",
-            "name": "Starry Night",
+            "name": "Acrylic 2",
             "text": [
                 {
                     "right": "What's your price for a normal sized piece?",
@@ -114,7 +120,7 @@
         },
         {
             "artist": "J.D.",
-            "name": "Lilie",
+            "name": "Acrylic 1",
             "text": [
                 {
                     "right": "What's your price for a normal sized piece?",
@@ -124,15 +130,14 @@
         },
         {
             "artist": "H.V.",
-            "name": "Lilie",
+            "name": "Acrylic 1",
             "text": []
         },
         {
             "artist": "D.C.",
-            "name": "Lilie",
+            "name": "Acrylic 1",
             "text": []
-        } 
-
+        }
     ],
     "messages": [
         {
@@ -143,14 +148,28 @@
     ],
     "order": [
         {
-            "name": "PORTAIT",
+            "name": "Portrait A",
+            "date": "Feb 28, 2021",
             "artist": "V.G.",
-            "status": "Finished"
+            "status": "preparing",
+            "price": "$200",
+            "product": "acrylic 1.jpeg"
         },
         {
-            "name": "A",
-            "artist": "C.M.",
-            "status": "In Progress"
+            "name": "Landsacpe A",
+            "artist": "S.D.",
+            "date": "Feb 11, 2021",
+            "status": "completed",
+            "price": "$100",
+            "product": "poster 1.jpg"
+        },
+        {
+            "name": "Landsacpe B",
+            "artist": "E.K.",
+            "date": "Feb 2, 2021",
+            "status": "accpeted",
+            "price": "$500",
+            "product": "watercolor 1.jpg"
         }
     ]
 }
