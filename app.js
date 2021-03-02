@@ -17,6 +17,7 @@ var send = require("./routes/send");
 var avail = require('./routes/availability');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
+var orderDetail = require('./routes/orderDetail')
 // Example route
 // var user = require('./routes/user');
 
@@ -44,6 +45,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/messages', messages.viewMessages);
 app.get('/order', order.viewOrder);
+app.get('/orderDetail', orderDetail.viewOrderDetail);
 app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
 app.get('/artist/:name&:artist/chat', chat.viewChat);
