@@ -139,10 +139,10 @@ i{
     border-top: 0;
     margin-top: -10px;
 }
-
+/* 
 .col-sm-3{
     //width:auto;
-}
+} */
 .chat-bubble--left::after{
         left:0;
         border-right-color: #eee;
