@@ -27,24 +27,23 @@ exports.viewChat = function (req, res) {
   }
 
   res.render('chat', data.chat[i]);
-  // console.log(img);
   // res.render('chat', {
   //   "artist": artist,
   //   "name": name,
   //   "imageName": img
   // });
 
-  // for (var i = 0; i < data.messages.length; i++) {
-  //   var temp = data.messages[i];
-  //   if (temp.name == artist) {
-  //     return;
-  //   }
-  // }
-  // var newMessage = {
-  //   "name": artist,
-  //   "title": "Hello",
-  //   "status": "read"
-  // }
-  // console.log(newMessage);
-  // data.messages.push(newMessage);
+  for (var i = 0; i < data.messages.length; i++) {
+    var temp = data.messages[i];
+    if (temp.name == artist) {
+      return;
+    }
+  }
+  var newMessage = {
+    "name": artist,
+    "title": "Hello",
+    "status": "read"
+  }
+  console.log(newMessage);
+  data.messages.push(newMessage);
 };
