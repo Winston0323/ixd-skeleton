@@ -203,3 +203,13 @@ form {
 .container {
     max-width: -webkit-fill-available;
 }
+
+.btn.btn.btn-primary {
+    /* color: rgb(54, 97, 96);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    margin: 5px;
+    margin-top: 5px;
+    margin-right: 5px; */
+    margin-bottom: 0px;
+}

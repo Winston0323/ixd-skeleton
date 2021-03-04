@@ -61,18 +61,15 @@
 	</div>
 	<div id="filter-refresh">
 		<section class="container masonry">
-			{{!-- <div class="row"> --}}
-				{{#each artists}}
-				<figure class="" id="{{id}}">
-					{{!-- http://localhost:3000 --}}
-					<a href="../artist/{{name}}&{{artist}}">
-						<img class="img-fluid" src="images/{{image}}" />
-					</a>
-					{{!-- <figcaption><a href="#">{{artist}}</a></figcaption> --}}
-				</figure>
-				{{/each}}
-				{{!--
-			</div> --}}
+			{{#each artists}}
+			<figure class="" id="{{id}}">
+				{{!-- http://localhost:3000 --}}
+				<a href="../artist/{{name}}&{{artist}}">
+					<img class="img-fluid" src="images/{{image}}" />
+				</a>
+				{{!-- <figcaption><a href="#">{{artist}}</a></figcaption> --}}
+			</figure>
+			{{/each}}
 		</section>
 	</div>
 	<a class="btn btn-primary" id="top" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="18"
