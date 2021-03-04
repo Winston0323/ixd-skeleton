@@ -19,6 +19,7 @@ exports.viewChat = function (req, res) {
       data.chat.push({
         "artist": artist,
         "name": name,
+        "title": "Hello",
         "text": []
       });
       // console.log("pushed empty i = " + i);

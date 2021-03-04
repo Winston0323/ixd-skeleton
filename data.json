@@ -107,6 +107,7 @@
         {
             "artist": "A.G.",
             "name": "Acrylic 2",
+            "title": "Hello",
             "text": [
                 {
                     "linkable": false,
@@ -137,6 +138,7 @@
         {
             "artist": "D.W.",
             "name": "Acrylic 1",
+            "title": "Hello",
             "text": [
                 {
                     "linkable": false,
@@ -167,6 +169,7 @@
         {
             "artist": "V.G.",
             "name": "Cartoon 1",
+            "title": "Hello",
             "text": [
                 {
                     "linkable": false,
@@ -197,6 +200,7 @@
         {
             "artist": "D.C.",
             "name": "Acrylic 4",
+            "title": "Hello",
             "text": []
         }
     ],

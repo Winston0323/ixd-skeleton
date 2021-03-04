@@ -56,11 +56,12 @@
             </tr>
         </thead>
         <tbody>
-            {{#each messages}}
+            {{#each chat}}
             <tr>
-                <th scope="row">1</th>
-                <td>{{name}}</td>
+                <td></td>
+                <td>{{artist}}</td>
                 <td>{{title}}</td>
+                <td><a class="btn btn-primary" id='all' href="/artist/{{name}}&{{artist}}/chat" role="button">Details</a></td>
             </tr>
             {{/each}}
         </tbody>

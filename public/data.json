@@ -105,37 +105,102 @@
     ],
     "chat": [
         {
-            "artist": "V.G.",
+            "artist": "A.G.",
             "name": "Acrylic 2",
+            "title": "Hello",
             "text": [
                 {
-                    "right": "What's your price for a normal sized piece?",
-                    "left": "It will be around $100 or so? Depend on the details though."
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
                 },
                 {
-                    "right": "Good to know!",
-                    "left": "Here's the schedule"
+                    "linkable": false,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Here's the <a href='http://localhost:3000/addOrder/A.G.'>Final</a>"
                 }
             ]
         },
         {
-            "artist": "J.D.",
+            "artist": "D.W.",
             "name": "Acrylic 1",
+            "title": "Hello",
             "text": [
                 {
-                    "right": "What's your price for a normal sized piece?",
-                    "left": "It will be around $100 or so? Depend on the details though."
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
+                },
+                {
+                    "linkable": false,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Here's the <a href='http://localhost:3000/addOrder/D.W.'>Final</a>"
                 }
             ]
         },
         {
-            "artist": "H.V.",
-            "name": "Acrylic 1",
-            "text": []
+            "artist": "V.G.",
+            "name": "Cartoon 1",
+            "title": "Hello",
+            "text": [
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
+                },
+                {
+                    "linkable": false,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Check here for <a href='http://localhost:3000/addOrder/V.G.'>status</a>"
+                }
+            ]
         },
         {
             "artist": "D.C.",
-            "name": "Acrylic 1",
+            "name": "Acrylic 4",
+            "title": "Hello",
             "text": []
         }
     ],
