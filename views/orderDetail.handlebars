@@ -72,6 +72,8 @@
         <h1>Process</h1>
         <div class="detail-sector" id="progress-description">
             {{{detail}}}
+            <br>
+            <br>
         </div>
         <h1>Product</h1>
         <div class="detail-sector">
@@ -82,9 +84,17 @@
         </div>
         <div class="bottom">
         {{#if acceptable}}
-            <div class="accept-btn">ACCEPT</div>
+            <div class="accept-btn" id = "button-description" onclick = "myFunction()">ACCEPT</div>
+            
         {{/if}}
         </div>
+        <script>
+            function myFunction(){
+                //document.getElementById("button-description").innerHTML = "";
+                document.getElementById("button-description").style.visibility = "hidden";
+                document.getElementById("progress-description").innerHTML = "Final product accepted!";
+            }
+        </script>
         
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
