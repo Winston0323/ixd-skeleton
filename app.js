@@ -57,7 +57,7 @@ app.get('/pottery', indexPottery.viewPottery);
 app.get('/watercolor', indexWatercorlor.viewWatercolor);
 app.get('/messages', messages.viewMessages);
 
-app.get('/orderDetail', orderDetail.viewOrderDetail);
+app.get('/orders/orderDetail', orderDetail.viewOrderDetail);
 
 app.get('/orders', orders.viewOrders);
 app.get('/addOrder/:artist', add.addOrder);
