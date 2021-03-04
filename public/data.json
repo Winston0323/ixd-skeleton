@@ -146,14 +146,14 @@
             "status": "read"
         }
     ],
-    "order": [
+    "orders": [
         {
             "name": "Portrait A",
             "date": "Feb 28, 2021",
             "artist": "V.G.",
             "status": "preparing",
             "price": "$200",
-            "product": "acrylic 1.jpeg"
+            "product": "selfportrait.jpg"
         },
         {
             "name": "Landscape A",
@@ -161,7 +161,7 @@
             "date": "Feb 11, 2021",
             "status": "completed",
             "price": "$100",
-            "product": "poster 1.jpg"
+            "product": "greengrass.jpg"
         },
         {
             "name": "Landscape B",
@@ -169,7 +169,7 @@
             "date": "Feb 2, 2021",
             "status": "accpeted",
             "price": "$500",
-            "product": "watercolor 1.jpg"
+            "product": "yellowgrass.jpg"
         }
     ]
 }

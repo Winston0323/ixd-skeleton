@@ -30,8 +30,8 @@ function addProjectDetails(e) {
 	var pieceName = 0;
 	var status = "Finished";
 	console.log("artist is "+ artist);
-	for (var i = 0; i < data.order.length; i++) {
-		var temp = data.order[i];
+	for (var i = 0; i < data.orders.length; i++) {
+		var temp = data.orders[i];
 		if (temp.artist == artist) {
 			pieceName = temp.name;
       		date = temp.date;
