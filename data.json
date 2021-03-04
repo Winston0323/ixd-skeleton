@@ -105,52 +105,95 @@
         }
     ],
     "chat": [
-        {
-            "artist": "V.G.",
+        {   
+            "artist": "A.G.",
             "name": "Acrylic 2",
             "text": [
                 {
+                    "linkable": false,
                     "lg-end": true,
                     "from": "right",
                     "txt": "What's your price for a normal sized piece?"
                 },
                 {
+                    "linkable": false,
                     "lg-end": false,
                     "from": "left",
                     "txt": "It will be around $100 or so? Depend on the details though."
                 },
                 {
+                    "linkable": false,
                     "lg-end": true,
                     "from": "right",
                     "txt": "Good to know!"
                 },
                 {
+                    "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Here's the schedule"
+                    "txt": "Here's the <a href='http://localhost:3000/addOrder/A.G.'>Final</a>"
                 }
             ]
         },
         {
-            "artist": "J.D.",
+            "artist": "D.W.",
             "name": "Acrylic 1",
             "text": [
                 {
+                    "linkable": false,
                     "lg-end": true,
                     "from": "right",
                     "txt": "What's your price for a normal sized piece?"
                 },
                 {
+                    "linkable": false,
                     "lg-end": false,
                     "from": "left",
                     "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Here's the <a href='http://localhost:3000/addOrder/D.W.'>Final</a>"
                 }
             ]
         },
         {
-            "artist": "H.V.",
+            "artist": "V.G.",
             "name": "Acrylic 1",
-            "text": []
+            "text": [
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
+                },
+                {
+                    "linkable": false,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Check here for <a href='http://localhost:3000/addOrder/V.G.'>status</a>"
+                }
+            ]
         },
         {
             "artist": "D.C.",
@@ -175,16 +218,16 @@
             "product": "acrylic 1.jpeg"
         },
         {
-            "name": "Landsacpe A",
-            "artist": "S.D.",
+            "name": "Landscape A",
+            "artist": "D.W.",
             "date": "Feb 11, 2021",
             "status": "completed",
             "price": "$100",
             "product": "poster 1.jpg"
         },
         {
-            "name": "Landsacpe B",
-            "artist": "E.K.",
+            "name": "Landscape B",
+            "artist": "A.G.",
             "date": "Feb 2, 2021",
             "status": "accpeted",
             "price": "$500",

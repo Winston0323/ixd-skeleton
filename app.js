@@ -23,6 +23,7 @@ var send = require("./routes/send");
 var avail = require('./routes/availability');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
+var orderDetail = require('./routes/orderDetail')
 // Example route
 // var user = require('./routes/user');
 
@@ -55,6 +56,9 @@ app.get('/sketch', indexSketch.viewSketch);
 app.get('/pottery', indexPottery.viewPottery);
 app.get('/watercolor', indexWatercorlor.viewWatercolor);
 app.get('/messages', messages.viewMessages);
+
+app.get('/orders/orderDetail', orderDetail.viewOrderDetail);
+
 app.get('/orders', orders.viewOrders);
 app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
