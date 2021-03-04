@@ -1,6 +1,8 @@
 var data = require('../data.json');
 exports.viewLogin = function (req, res) {
   // console.log(data);
+  // var newText = request.query.text;
+  // console.log(newText);
   res.render('login');
   // console.log("login data: ");
 };

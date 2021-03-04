@@ -25,30 +25,36 @@
                     alt="Avatar" class="avatar"></img>
             </div>
 
-            <div class="container justify-content-center">
+            <div class="container mx-auto">
                 {{!-- <div class="row" display="">
                     <p>Username</p>
                 </div> --}}
-                <div class="row justify-content-start" display="inline-block">
-                    <label for="uname"><b>Username</b></label>
-                    <br>
-                </div>
-                <div class="row justify-content-center" display="inline-block">
-                    <input type="text" placeholder="Enter Username" name="uname"></input>
-                    <br>
+                <div class="row">
+                    <div class="justify-content-start" display="inline">
+                        <label for="uname"><b>Username</b></label>
+                        <br>
+                    </div>
+                    <div class="justify-content-center" display="inline">
+                        <input class="justify-content-center" type="text" placeholder="Enter Username"
+                            name="uname"></input>
+                        <br>
+                    </div>
                 </div>
                 {{!-- <div class="row" display="">
                     <p>Password</p>
                 </div> --}}
-                <div class="row justify-content-start" display="inline-block">
-                    <label for="psw">
-                        <b>Password</b>
-                    </label>
-                    <br>
-                </div>
-                <div class="row justify-content-center" display="inline-block">
-                    <input type="password" placeholder="Enter Password" name="psw"></input>
-                    <br>
+                <div class="row">
+                    <div class="ustify-content-start" display="inline">
+                        <label for="psw">
+                            <b>Password</b>
+                        </label>
+                        <br>
+                    </div>
+                    <div class="justify-content-center" display="inline">
+                        <input class="justify-content-center" type="password" placeholder="Enter Password"
+                            name="psw"></input>
+                        <br>
+                    </div>
                 </div>
                 <button type="submit" onclick="location.href = 'http://localhost:3000/';">Login</button>
                 <label>
