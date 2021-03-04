@@ -9,28 +9,22 @@ exports.viewChat = function (req, res) {
   // // console.log(artist);
   for (i = 0; i < data.chat.length; i++) {
     var temp = data.chat[i];
+    // console.log(i + " " + temp.artist);
     // console.log(temp.artist);
     if (temp.artist == req.params.artist) {
       // text = temp.text;
+      // console.log("break i = " + i);
       break;
-    }
-    if (i = data.chat.length - 1) {
+    } else if (i == (data.chat.length - 1)) {
       data.chat.push({
         "artist": artist,
         "name": name,
         "text": []
       });
+      // console.log("pushed empty i = " + i);
     }
-  }
-  // var chats = [];
-  // for (var chat in data.chat[i]) {
-  //   var str = '';
-  //   data.chat[i].forEach(ch => str += '<div class="' + ch.from.type + '">' + ch.msg.message + '</div>')
-  //   chats.push(str)
-  // }
-  // document.getElementById('chat').innerHTML = chats.join('<hr>');
 
-  // console.log("in chat: " + data.chat[i].artist);
+  }
 
   res.render('chat', data.chat[i]);
   // console.log(img);
@@ -40,17 +34,17 @@ exports.viewChat = function (req, res) {
   //   "imageName": img
   // });
 
-  for (var i = 0; i < data.messages.length; i++) {
-    var temp = data.messages[i];
-    if (temp.name == artist) {
-      return;
-    }
-  }
-  var newMessage = {
-    "name": artist,
-    "title": "Hello",
-    "status": "read"
-  }
-  console.log(newMessage);
-  data.messages.push(newMessage);
+  // for (var i = 0; i < data.messages.length; i++) {
+  //   var temp = data.messages[i];
+  //   if (temp.name == artist) {
+  //     return;
+  //   }
+  // }
+  // var newMessage = {
+  //   "name": artist,
+  //   "title": "Hello",
+  //   "status": "read"
+  // }
+  // console.log(newMessage);
+  // data.messages.push(newMessage);
 };

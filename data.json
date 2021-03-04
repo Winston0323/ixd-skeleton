@@ -1,20 +1,19 @@
 {
-    "un": "",
     "artists": [
         {
-            "artist": "V.G.",
+            "artist": "D.W.",
             "name": "Acrylic 1",
             "id": "artist1a",
             "image": "acrylic 1.jpeg"
         },
         {
-            "artist": "D.W.",
+            "artist": "V.G.",
             "name": "Cartoon 1",
             "id": "artist1ca",
             "image": "cartoon 1.jpg"
         },
         {
-            "artist": "A.G.",
+            "artist": "J.D.",
             "name": "Watercolor 3",
             "id": "artist3w",
             "image": "watercolor 3.jpg"
@@ -32,7 +31,7 @@
             "image": "charcoal 1.jpg"
         },
         {
-            "artist": "J.D.",
+            "artist": "A.G.",
             "name": "Acrylic 2",
             "id": "artist2a",
             "image": "acrylic 2.jpg"
@@ -105,7 +104,7 @@
         }
     ],
     "chat": [
-        {   
+        {
             "artist": "A.G.",
             "name": "Acrylic 2",
             "text": [
@@ -167,7 +166,7 @@
         },
         {
             "artist": "V.G.",
-            "name": "Acrylic 1",
+            "name": "Cartoon 1",
             "text": [
                 {
                     "linkable": false,
@@ -197,7 +196,7 @@
         },
         {
             "artist": "D.C.",
-            "name": "Acrylic 1",
+            "name": "Acrylic 4",
             "text": []
         }
     ],
@@ -215,7 +214,7 @@
             "artist": "V.G.",
             "status": "preparing",
             "price": "$200",
-            "product": "acrylic 1.jpeg"
+            "product": "cartoon 1.jpeg"
         },
         {
             "name": "Landscape A",
@@ -223,7 +222,7 @@
             "date": "Feb 11, 2021",
             "status": "completed",
             "price": "$100",
-            "product": "poster 1.jpg"
+            "product": "acrylic 1.jpg"
         },
         {
             "name": "Landscape B",
@@ -231,7 +230,7 @@
             "date": "Feb 2, 2021",
             "status": "accpeted",
             "price": "$500",
-            "product": "watercolor 1.jpg"
+            "product": "acrylic 2.jpg"
         }
     ]
 }

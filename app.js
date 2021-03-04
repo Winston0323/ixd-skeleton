@@ -58,7 +58,6 @@ app.get('/watercolor', indexWatercorlor.viewWatercolor);
 app.get('/messages', messages.viewMessages);
 
 app.get('/orders/orderDetail', orderDetail.viewOrderDetail);
-
 app.get('/orders', orders.viewOrders);
 app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
