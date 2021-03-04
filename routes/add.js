@@ -3,12 +3,19 @@
  * GET home page.
  */
 
+const e = require('express');
 var data = require('../data.json');
-
+var ready = false;
 exports.addOrder = function (req, res) {
+  	var product = 0;
+  	var date = 0;
+  	var price = 0;
 	var artist = req.params.artist;
-	var pieceName = "newPiece";
+	var pieceName = 0;
 	var status = "Finished";
+	var progressbar = 0;
+	var acceptable = 0;
+	
 	var newOrder = {
 		"name": pieceName,
 		"artist": artist,
@@ -16,16 +23,59 @@ exports.addOrder = function (req, res) {
 	}
 	for (var i = 0; i < data.order.length; i++) {
 		var temp = data.order[i];
-		console.log(data.order.length);
 		if (temp.artist == artist) {
-			console.log("inner i:" + i);
-			res.render('order', data);
-			return;
+			pieceName = temp.name;
+      		date = temp.date;
+      		price = temp.price;
+      		status = temp.status;
+			product = temp.product;
+			break;
 		}
 	}
-	data.order.push(newOrder);
-	console.log(newOrder);
-	res.render('order', data);
+	
+	console.log("status is "+status);
+  	if(status == "preparing"){
+		var progressBlock = '<div class = "frame">'+
+							'<p>The order is in progress. Please check</p>' +
+							'<p>the <a href="http://localhost:3000/availability">Calendar</a> for more details</p>'+
+							'</div>';
+		progressbar = "progress-prepared";
+		acceptable = false;
+		
+	}else if(status == "completed"){
+		var progressBlock = '<div class = "frame">'+
+						'<p>The order has been finished. Please confirm</p>' +
+						'<p>if you accepet the final product</p>'+
+						'</div>';
+		progressbar = "progress-finished";
+		acceptable = true;
+	}else if(status == "accpeted") {
+		var progressBlock = '<div class = "frame">'+
+						'<p>The order has been completed.</p>' +
+						'</div>';
+		progressbar = "progress-finished";
+		acceptable = false;
+	}else{
+		var progressBlock = '<div class = "frame">'+
+						'<p>Unavalible</p>' +
+						'</div>';
+		progressbar = "progress-received";
+		acceptable = false;
+	}
+
+	//document.getElementById("progress-description").innerHTML = codeBlock;	
+	
+	console.log("product name is " + product);
+	res.render('orderDetail', {
+    "name": pieceName,
+    "date": date,
+    "price": price,
+    "status": status,
+	"product": product,
+	"detail": progressBlock,
+	"progressbar": progressbar,
+	"acceptable": acceptable
+  });
 }
 // const { request } = require('express');
 // var data = require('../logindata.json');

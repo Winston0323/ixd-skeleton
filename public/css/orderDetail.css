@@ -102,16 +102,71 @@ figure{
   height:14px;
   width:100%;
 }
-.progress{
+.progress-receive{
   background-color: var(--line-border-fill);
   position: absolute;
   margin-top: 30px;
   height:14px;
-  width:100%;
+  width:5%;
+  border-radius: 4px;
+}
+.progress-prepared{
+  background-color: var(--line-border-fill);
+  position: absolute;
+  margin-top: 30px;
+  height:14px;
+  width:50%;
+  border-radius: 4px;
+}
+.progress-finished{
+  background-color: var(--line-border-fill);
+  position: absolute;
+  margin-top: 30px;
+  height:14px;
+  width:50%;
+  border-radius: 4px;
 }
 .circle{
   color: red;
 }
 .circle.active{
   color: var(--line-border-fill);
+}
+.frame{
+  list-style-type: none;
+  align-items: center;
+  padding: 10 10px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+#answer{
+  margin-left: 15%;
+}
+.detail-sector{
+  display: flex;
+  width: 95%;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+  border: 1px solid white;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 0px; 
+}
+.accept-btn{
+  background-color: #FF603F;
+  width: 67px;
+  padding: 5 5 5 5px;
+  border-radius: 4px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
+  color: #F2F9FC;
 }
