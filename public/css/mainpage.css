@@ -9,6 +9,7 @@ body{
 .breadcrumb{
     background: #F2F9FC;
     display: block;
+    margin-bottom: 10px;
 }
 li.breadcrumb-item{
     /* background: #F2F9FC; */
@@ -185,14 +186,38 @@ figure{
 .navbar-expand{
   justify-content: space-between;
 }
-
-.btn{
+.btn.btn.btn-primary{
+    color: #366160;
+  background-color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  /* margin-bottom: 10px; */
+}
+.btn.btn-primary#top{
   bottom: 1rem;
   right: 1rem;
   position: fixed;
+  color: #fff;
+  background-color: #FF603F;
+  border-color: #FF603F;
+  margin: 1rem;
+  padding: 1rem;
 }
-.btn-primary {
-    color: #fff;
-    background-color: #FF603F;
+
+div.scroll-tag {
+  background-color: #9ADFDD;
+  overflow: auto;
+  white-space: nowrap;
+}
+.sticky-top{
+  top:66px;
+}
+.container.overflow-scroll.sticky-top.scroll-tag .btn.btn.btn-primary:hover{
+  color: #FF603F;
+}
+
+.btn.btn-primary.active{
+      color: #FBFDFF; 
+    background: #FF603F;
     border-color: #FF603F;
 }

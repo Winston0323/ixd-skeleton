@@ -29,7 +29,7 @@
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<li><a class="dropdown-item" href="http://localhost:3000/availability">Calendar</a></li>
-					<li><a class="dropdown-item" href="http://localhost:3000/order">Order</a></li>
+					<li><a class="dropdown-item" href="http://localhost:3000/orders">Orders</a></li>
 					<li>
 						<hr class="dropdown-divider">
 					</li>
@@ -51,20 +51,28 @@
 	<div class="chat-panel">
 		<section class="container">
 			{{#each text}}
-			<div class="row no-gutter">
-				<div class="col-sm-3">
-					<div class="message--right">
-						<div class="chat-bubble chat-bubble--right">
-							{{this.right}}
-						</div>
-						<div class="user-icon--right">
+			<div class="row no-gutter{{#if lg-end}} justify-content-lg-end{{/if}}">
+				<div class="col-lg-4" id="chat">
+					<div class="message--{{this.from}}">
+						{{#unless lg-end}}
+						<div class="user-icon--{{this.from}}">
 							<i class="fas fa-user-alt" id="user"></i>
 						</div>
+						{{/unless}}
+						<div class="chat-bubble chat-bubble--{{this.from}}">
+							{{this.txt}}
+						</div>
+						{{#if lg-end}}
+						<div class="user-icon--{{this.from}}">
+							<i class="fas fa-user-alt" id="user"></i>
+						</div>
+						{{/if}}
 					</div>
 				</div>
 			</div>
-			<div class="row no-gutter">
-				<div class="col-sm-3">
+			{{/each}}
+			{{!-- <div class="row no-gutter">
+				<div class="col-lg-4" id="chat">
 					<div class="message--left">
 						<div class="user-icon--left">
 							<i class="fas fa-user-alt" id="user"></i>
@@ -77,7 +85,7 @@
 			</div>
 			{{/each}}
 			<div class="row no-gutter">
-				<div class="col-sm-3">
+				<div class="col-lg-4">
 					<div class="message--left">
 						<div class="user-icon--left">
 							<i class="fas fa-user-alt" id="user"></i>
@@ -87,13 +95,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 		</section>
 	</div>
-	<div class="fixed-bottom">
-		<div class="row">
-			<div class="col-sm-12">
-				<form id="sendTextForm" role="form" method="get" action="/artist/{{name}}&{{artist}}/chat/send">
+	{{!-- <div class="fixed-bottom"> --}}
+		{{!-- <div class="row"> --}}
+			{{!-- <div class="col-md-12"> --}}
+				<form class="fixed-bottom" id="sendTextForm" role="form" method="get"
+					action="/artist/{{name}}&{{artist}}/chat/send">
 					<div class="chat-box-tray">
 						<input type="text" id='text' name='text' placeholder="Type your messages">
 						</input>
@@ -104,9 +113,10 @@
 						</div>
 					</div>
 				</form>
-			</div>
-		</div>
-	</div>
+				{{!--
+			</div> --}}
+			{{!-- </div> --}}
+		{{!-- </div> --}}
 
 	{{!--
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -8,9 +8,15 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 var index = require('./routes/index');
+//filter options
+var indexAcrylic = require('./routes/indexAcrylic');
+var indexDigital = require('./routes/indexDigital');
+var indexSketch = require('./routes/indexSketch');
+var indexPottery = require('./routes/indexPottery');
+var indexWatercorlor = require('./routes/indexWatercolor');
 var add = require('./routes/add');
 var messages = require('./routes/messages');
-var order = require('./routes/order');
+var orders = require('./routes/orders');
 var artist = require('./routes/artist');
 var chat = require('./routes/chat');
 var send = require("./routes/send");
@@ -43,9 +49,17 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+//filter options
+app.get('/acrylic', indexAcrylic.viewAcrylic);
+app.get('/digital', indexDigital.viewDigital);
+app.get('/sketch', indexSketch.viewSketch);
+app.get('/pottery', indexPottery.viewPottery);
+app.get('/watercolor', indexWatercorlor.viewWatercolor);
 app.get('/messages', messages.viewMessages);
-app.get('/order', order.viewOrder);
+
 app.get('/orderDetail', orderDetail.viewOrderDetail);
+
+app.get('/orders', orders.viewOrders);
 app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
 app.get('/artist/:name&:artist/chat', chat.viewChat);

@@ -1,4 +1,5 @@
 {
+    "un": "",
     "artists": [
         {
             "artist": "V.G.",
@@ -109,12 +110,24 @@
             "name": "Acrylic 2",
             "text": [
                 {
-                    "right": "What's your price for a normal sized piece?",
-                    "left": "It will be around $100 or so? Depend on the details though."
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
                 },
                 {
-                    "right": "Good to know!",
-                    "left": "Here's the schedule"
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Here's the schedule"
                 }
             ]
         },
@@ -123,8 +136,14 @@
             "name": "Acrylic 1",
             "text": [
                 {
-                    "right": "What's your price for a normal sized piece?",
-                    "left": "It will be around $100 or so? Depend on the details though."
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
+                },
+                {
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
                 }
             ]
         },
@@ -146,7 +165,7 @@
             "status": "read"
         }
     ],
-    "order": [
+    "orders": [
         {
             "name": "Portrait A",
             "date": "Feb 28, 2021",
