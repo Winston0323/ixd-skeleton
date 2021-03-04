@@ -46,24 +46,29 @@
             <li class="breadcrumb-item active" aria-current="page">Orders</li>
         </ol>
     </nav>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Work</th>
-                <th scope="col">Artist</th>
-                <th scope="col">Progress</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each orders}}
-            <tr>
-                <td>{{name}}</td>
-                <td>{{artist}}</td>
-                <td>{{status}}</td>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th scope="col">Work</th>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Progress</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each orders}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{artist}}</td>
+                    <td>{{status}}</td>
+                    <td><a class="btn btn-primary" id='all' href="http://localhost:3000/" role="button">Details</a></td>
+                    {{!-- <td><a href="http://localhost:3000/">Order details</a></td> --}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
     {{!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
