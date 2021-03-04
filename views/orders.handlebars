@@ -54,15 +54,18 @@
                 <th scope="col">Progress</th>
             </tr>
         </thead>
-        <tbody>
-            {{#each orders}}
-            <tr>
-                <td>{{name}}</td>
-                <td>{{artist}}</td>
-                <td>{{status}}</td>
-            </tr>
-            {{/each}}
-        </tbody>
+        
+            <tbody>
+                {{#each orders}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{artist}}</td>
+                    <td>{{status}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </a>
+        
     </table>
     {{!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
