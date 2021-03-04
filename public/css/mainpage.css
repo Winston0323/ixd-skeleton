@@ -215,3 +215,9 @@ div.scroll-tag {
 .container.overflow-scroll.sticky-top.scroll-tag .btn.btn.btn-primary:hover{
   color: #FF603F;
 }
+
+.btn.btn-primary.active{
+      color: #FBFDFF; 
+    background: #FF603F;
+    border-color: #FF603F;
+}

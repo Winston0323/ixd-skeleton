@@ -105,14 +105,14 @@ button:hover {
 }
 
 /* Avatar image */
-img.avatar {
+/* img.avatar {
   width: 40%;
   border-radius: 50%;
-}
+} */
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 /* The "Forgot password" text */
@@ -179,13 +179,13 @@ button:hover {
 
 /* Avatar image */
 img.avatar {
-  width: 40%;
+  width: 20%;
   border-radius: 50%;
 }
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 /* The "Forgot password" text */
@@ -203,4 +203,32 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 900px) {
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+}
+}
+@media only screen and (min-width: 600px) {
+input[type=text], input[type=password] {
+    width: 60%;
+}
+@media only screen and (min-width: 900px) {
+input[type=text], input[type=password] {
+    width: 40%;
+    /* padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; */
+}
+}
 }

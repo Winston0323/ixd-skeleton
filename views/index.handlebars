@@ -33,7 +33,7 @@
 						<hr class="dropdown-divider">
 					</li>
 					<li><a class="dropdown-item" href="availability">Calendar</a></li>
-					<li><a class="dropdown-item" href="order">Order</a></li>
+					<li><a class="dropdown-item" href="orders">Orders</a></li>
 					<li>
 						<hr class="dropdown-divider">
 					</li>
@@ -47,29 +47,33 @@
 	</nav>
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
-			<li class="breadcrumb-item active" aria-current="page">Home</li>
+			<li class="breadcrumb-item" aria-current="page">Home</li>
 		</ol>
 	</nav>
 	<div class="container overflow-scroll sticky-top scroll-tag" display="inline-block">
-		<a class="btn btn-primary" href="#" role="button">All</a>
-		<a class="btn btn-primary" href="#" role="button">Acrylic</a>
-		<a class="btn btn-primary" href="#" role="button">Digital</a>
-		<a class="btn btn-primary" href="#" role="button">Sketch</a>
-		<a class="btn btn-primary" href="#" role="button">Pottery</a>
-		<a class="btn btn-primary" href="#" role="button">Watercolor</a>
+		<a class="btn btn-primary" id='all' href="http://localhost:3000/" role="button">All</a>
+		<a class="btn btn-primary" id='acrylic' href="http://localhost:3000/acrylic" role="button">Acrylic</a>
+		<a class="btn btn-primary" id='digital' href="http://localhost:3000/digital" role="button">Digital</a>
+		<a class="btn btn-primary" id='sketch' href="http://localhost:3000/sketch" role="button">Sketch</a>
+		<a class="btn btn-primary" id='pottery' href="http://localhost:3000/pottery" role="button">Pottery</a>
+		<a class="btn btn-primary" id='watercolor' href="http://localhost:3000/watercolor" role="button">Watercolor</a>
 	</div>
-	<section class="container masonry">
-		{{!-- <div class="row"> --}}
-			{{#each artists}}
-			<figure class="" id="{{id}}">
-				<a href="artist/{{name}}&{{artist}}">
-					<img class="img-fluid" src="images/{{image}}" />
-				</a>
-			</figure>
-			{{/each}}
-			{{!--
-		</div> --}}
-	</section>
+	<div id="filter-refresh">
+		<section class="container masonry">
+			{{!-- <div class="row"> --}}
+				{{#each artists}}
+				<figure class="" id="{{id}}">
+					{{!-- http://localhost:3000 --}}
+					<a href="../artist/{{name}}&{{artist}}">
+						<img class="img-fluid" src="images/{{image}}" />
+					</a>
+					{{!-- <figcaption><a href="#">{{artist}}</a></figcaption> --}}
+				</figure>
+				{{/each}}
+				{{!--
+			</div> --}}
+		</section>
+	</div>
 	<a class="btn btn-primary" id="top" href="#" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="18"
 			height="18" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
 			<path fill-rule="evenodd"
