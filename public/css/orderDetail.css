@@ -170,3 +170,9 @@ figure{
   margin-right: 0px;
   color: #F2F9FC;
 }
+
+#progress-description{
+  width: 95%;
+  height: 15%;
+  text-align: center;
+}

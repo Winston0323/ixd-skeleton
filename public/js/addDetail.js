@@ -8,6 +8,10 @@ $(document).ready(function(){
 		  .then(d => {data = d;
 				initializePage();
 		});
+	    $("#button-description").click(function(){
+			$("button-description").hide();
+			$("#progress-description").text("Final product accepted!");
+		})
 })
 
 /*
