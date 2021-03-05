@@ -45,7 +45,7 @@ function addProjectDetails(e) {
   	if(status == "preparing"){
 		var progressBlock = '<div class = "frame">'+
 							'<p>The order is in progress. Please check</p>' +
-							'<p>the <a href="http://localhost:3000/availability">Calendar</a> for more details</p>'+
+							'<p>the <a href="https://a7-artcommissioner.herokuapp.com/availability">Calendar</a> for more details</p>'+
 							'</div>';
 	}else if(status == "completed"){
 		var progressBlock = '<div class = "frame">'+

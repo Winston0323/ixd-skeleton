@@ -17,7 +17,7 @@
         </a>
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link home" aria-current="page" href="https://a7-artcommissioner.herokuapp.com/">Home</a>
+                <a class="nav-link active home" aria-current="page" href="https://a7-artcommissioner.herokuapp.com/">Home</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -47,11 +47,38 @@
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item home"><a href="https://a7-artcommissioner.herokuapp.com/">Home</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a href="../{{name}}&{{artist}}">{{artist}}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Availability</li>
+            {{!-- <li class="breadcrumb-item" aria-current="page">Artist</li> --}}
+            <li class="breadcrumb-item active" aria-current="page">Schedules</li>
         </ol>
     </nav>
-    <div class="responsiveCal">
+    <div class="accordion accordion-flush">
+        {{#each orders}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading{{number}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapse{{number}}" aria-expanded="false"
+                    aria-controls="flush-collapse{{number}}">
+                    Accordion Item #1{{name}}
+                </button>
+            </h2>
+            <div id="flush-collapse{{number}}" class="accordion-collapse collapse"
+                aria-labelledby="flush-heading{{number}}" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="responsiveCal">
+                        <iframe
+                            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%237986CB&amp;ctz=America%2FLos_Angeles&amp;src=Y19hZmw4bnZhMHJoNm80dTJzcjJoZzAzbGpmb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5"
+                            style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
+                            <a target="_blank"
+                                href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MzcyMzMwZXBmOWVkYW9hZzdxYnRocjA4NjIgY19hZmw4bnZhMHJoNm80dTJzcjJoZzAzbGpmb0Bn&amp;tmsrc=c_afl8nva0rh6o4u2sr2hg03ljfo%40group.calendar.google.com"><img
+                                    border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{!-- <div class="responsiveCal">
         <iframe
             src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%237986CB&amp;ctz=America%2FLos_Angeles&amp;src=Y19hZmw4bnZhMHJoNm80dTJzcjJoZzAzbGpmb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5"
             style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
@@ -59,7 +86,7 @@
                 href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MzcyMzMwZXBmOWVkYW9hZzdxYnRocjA4NjIgY19hZmw4bnZhMHJoNm80dTJzcjJoZzAzbGpmb0Bn&amp;tmsrc=c_afl8nva0rh6o4u2sr2hg03ljfo%40group.calendar.google.com"><img
                     border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
         </iframe>
-    </div>
+    </div> --}}
     {{!--
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
