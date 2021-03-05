@@ -29,7 +29,7 @@
                     Profile
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="http://localhost:3000/availability">Calendar</a></li>
+                    <li><a class="dropdown-item" href="http://localhost:3000/calendars">Schedules</a></li>
                     <li><a class="dropdown-item" href="http://localhost:3000/orders">Orders</a></li>
                     {{!-- <li><a class="dropdown-item disabled" href="#">Profile</a></li> --}}
                     {{!-- <li><a class="dropdown-item" href="login">Log In</a></li> --}}
@@ -99,7 +99,10 @@
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <p>
                 <br>
-                Artist has not posted schedule. See linked <a href="../availability">Calendar</a>.
+                Artist has not posted schedule. See linked <a
+                    href="http://localhost:3000/artist/{{name}}&{{artist}}/availability">Calendar</a> for
+                {{artist}}'s
+                availability.
                 <br>
                 <br>
             </p>

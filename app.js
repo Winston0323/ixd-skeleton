@@ -8,6 +8,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 var index = require('./routes/index');
+var calendars = require('./routes/calendars');
 //filter options
 var indexAcrylic = require('./routes/indexAcrylic');
 var indexDigital = require('./routes/indexDigital');
@@ -56,13 +57,13 @@ app.get('/sketch', indexSketch.viewSketch);
 app.get('/pottery', indexPottery.viewPottery);
 app.get('/watercolor', indexWatercorlor.viewWatercolor);
 app.get('/messages', messages.viewMessages);
-
+app.get('/calendars', calendars.viewCalendars);
 app.get('/orders/orderDetail', orderDetail.viewOrderDetail);
 app.get('/orders', orders.viewOrders);
 app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
 app.get('/artist/:name&:artist/chat', chat.viewChat);
-app.get('/availability', avail.viewAvail);
+app.get('/artist/:name&:artist/availability', avail.viewAvail);
 app.get('/artist/:name&:artist/chat/send', send.sendText)
 app.get('/login', login.viewLogin);
 app.get('/signup', signup.viewSignup);
