@@ -22,4 +22,4 @@
 // 	// $("#thumbnail").click(projectClick);
 // 	//$(".home").click(projectClick1);
 // 	// $("#all").load(window.location.href + " .container masonry");
-// }
+// }`
