@@ -218,7 +218,8 @@
             "artist": "V.G.",
             "status": "preparing",
             "price": "$200",
-            "product": "selfportrait.jpg"
+            "product": "selfportrait.jpg",
+            "Finished": ""
         },
         {
             "name": "Landscape A",
@@ -226,7 +227,8 @@
             "date": "Feb 11, 2021",
             "status": "completed",
             "price": "$100",
-            "product": "greengrass.jpg"
+            "product": "greengrass.jpg",
+            "Finished": "active"
         },
         {
             "name": "Landscape B",
@@ -234,7 +236,8 @@
             "date": "Feb 2, 2021",
             "status": "accpeted",
             "price": "$500",
-            "product": "yellowgrass.jpg"
+            "product": "yellowgrass.jpg",
+            "Finished": "active"
         }
     ]
 }

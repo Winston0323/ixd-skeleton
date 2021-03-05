@@ -15,6 +15,7 @@ exports.addOrder = function (req, res) {
 	var status = "Finished";
 	var progressbar = 0;
 	var acceptable = 0;
+	var finish = 0;
 	
 	var newOrder = {
 		"name": pieceName,
@@ -29,6 +30,7 @@ exports.addOrder = function (req, res) {
       		price = temp.price;
       		status = temp.status;
 			product = temp.product;
+			finish = temp.Finished;
 			break;
 		}
 	}
@@ -45,7 +47,7 @@ exports.addOrder = function (req, res) {
 	}else if(status == "completed"){
 		var progressBlock = '<div class = "frame">'+
 						'<p>The order has been finished. Please confirm</p>' +
-						'<p>if you accepet the final product</p>'+
+						'<p>if you accept the final product</p>'+
 						'</div>';
 		progressbar = "progress-finished";
 		acceptable = true;
@@ -74,7 +76,8 @@ exports.addOrder = function (req, res) {
 	"product": product,
 	"detail": progressBlock,
 	"progressbar": progressbar,
-	"acceptable": acceptable
+	"acceptable": acceptable, 
+	"Finished": finish
   });
 }
 // const { request } = require('express');

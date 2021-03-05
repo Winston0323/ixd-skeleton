@@ -53,7 +53,7 @@
         <div class="progress-container">
             <div class="circle active">Recieve</div>
             <div class="circle active">Prepare</div>
-            <div class="circle">Finished</div>
+            <div class="circle {{Finished}}">Finished</div>
             <div class="{{progressbar}}" id="progress"></div>
         </div>
         <h1>Order Details</h1>
@@ -72,8 +72,6 @@
         <h1>Process</h1>
         <div class="detail-sector" id="progress-description">
             {{{detail}}}
-            <br>
-            <br>
         </div>
         <h1>Product</h1>
         <div class="detail-sector">
@@ -92,7 +90,7 @@
             function myFunction(){
                 //document.getElementById("button-description").innerHTML = "";
                 document.getElementById("button-description").style.visibility = "hidden";
-                document.getElementById("progress-description").innerHTML = "Final product accepted!";
+                document.getElementById("progress-description").innerHTML = "<div class='frame'><p>Final product accepted!</p></div>";
             }
         </script>
         
