@@ -38,8 +38,8 @@ exports.addOrder = function (req, res) {
 	console.log("status is "+status);
   	if(status == "preparing"){
 		var progressBlock = '<div class = "frame">'+
-							'<p>The order is in progress. Please check</p>' +
-							'<p>the <a href="https://a7-artcommissioner.herokuapp.com/availability">Calendar</a> for more details</p>'+
+							'The order is in progress. Please check' +
+							'the <a href="https://a7-artcommissioner.herokuapp.com/availability">Calendar</a> for more details'+
 							'</div>';
 		progressbar = "progress-prepared";
 		acceptable = false;
