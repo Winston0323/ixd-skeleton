@@ -19,7 +19,7 @@
         </a>
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link home" aria-current="page" href="https://a7-artcommissioner.herokuapp.com/">Home</a>
+                <a class="nav-link home" aria-current="page" href="http://localhost:3000/">Home</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -29,34 +29,34 @@
                     Profile
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="https://a7-artcommissioner.herokuapp.com/calendars">Schedules</a></li>
-                    <li><a class="dropdown-item" href="https://a7-artcommissioner.herokuapp.com/orders">Orders</a></li>
+                    <li><a class="dropdown-item" href="http://localhost:3000/calendars">Schedules</a></li>
+                    <li><a class="dropdown-item" href="http://localhost:3000/orders">Orders</a></li>
                     {{!-- <li><a class="dropdown-item disabled" href="#">Profile</a></li> --}}
                     {{!-- <li><a class="dropdown-item" href="login">Log In</a></li> --}}
                     {{!-- <li><a class="dropdown-item" href="#">Sign Up</a></li> --}}
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="https://a7-artcommissioner.herokuapp.com/login">Log Out</a></li>
+                    <li><a class="dropdown-item" href="http://localhost:3000/login">Log Out</a></li>
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://a7-artcommissioner.herokuapp.com/messages">Messages</a>
+                <a class="nav-link" href="http://localhost:3000/messages">Messages</a>
             </li>
         </ul>
     </nav>
 
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item home"><a href="https://a7-artcommissioner.herokuapp.com/">Home</a></li>
+            <li class="breadcrumb-item home"><a href="http://localhost:3000/">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{artist}}</li>
         </ol>
     </nav>
 
     <section class="container-fluid">
-        <div class="row" id="head">
+        <div class="row zoom" id="head">
             <div class="col-sm-4"></div>
-            <figure class="col-sm-4">
+            <figure class="col-sm-4 justify-content-center">
                 <img class="img-fluid" id="h1" src="/images/{{imageName}}" />
             </figure>
             <div class=" col-sm-4">
@@ -100,7 +100,7 @@
             <p>
                 <br>
                 Artist has not posted schedule. See linked <a
-                    href="https://a7-artcommissioner.herokuapp.com/artist/{{name}}&{{artist}}/availability">Calendar</a> for
+                    href="http://localhost:3000/artist/{{name}}&{{artist}}/availability">Calendar</a> for
                 {{artist}}'s
                 availability.
                 <br>
@@ -124,7 +124,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/artist.js"></script>
 </body>
 
 </html>

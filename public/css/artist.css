@@ -63,3 +63,7 @@ p.container.lead{
 section .row img {
     margin-bottom: 0px;
 }
+
+img#h1.img-fluid{
+    margin:auto;
+}
