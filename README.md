@@ -14,6 +14,7 @@ Bootstrap 5.0: https://getbootstrap.com/docs/5.0/getting-started/introduction/
 https://thomas.vanhoutte.be/miniblog/make-google-calendar-iframe-responsive/ (for Google Calendar responsiveness)
 https://stackoverflow.com/questions/51673363/how-do-i-arrange-received-and-send-chat-conversation-data-from-json-file
 https://www.smashingmagazine.com/native-css-masonry-layout-css-grid/
+https://www.codexworld.com/image-hover-zoom-effect-css-jquery/
 
 Image:
 https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpapertip.com%2Fwpic%2FbbRwoT_starry-night-art-plain-wall-murals-starry-night%2F&psig=AOvVaw1cbp8gXsFrQ6YeRgYTQS5i&ust=1614314589407000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiX5NCchO8CFQAAAAAdAAAAABAD
