@@ -4,101 +4,66 @@
 <head>
     <title>Artist Description</title>
     <meta charset="utf-8">
-    <script src = "js/jquery-1.11.0.js"></script>
-	<script src = "js/bootstrap.js"></script>
-	<script src = "js/login.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/login.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="/css/mainpage.css" rel="stylesheet">
-    <link href="/css/artist.css" rel="stylesheet">
-    {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
-    {{!-- <script> --}}
-        {{!-- console.log("addfriend 111");
-        var data = require('../logindata.json');
+    <link href="/css/login.css" rel="stylesheet">
+    {{!-- <script type="text/javascript" src="../data.json"></script> --}}
+    <script>
         $(document).ready(function(){
-        var userName = $("input").get(0);
-        data.users.push({"name": userName});
-         console.log("addfriend");
-    /*keyup(function(){
-        var txt = $("input").val();
-        $.post("demo_ajax_gethint.asp", {suggest: txt}, function(result){
-        $("span").html(result);
+            var user,pass;
+            $("#submitButton").click(function(){
+            user=$("#myInput").val();
+            pass=$("#pswd").val();
+            $.post("http://localhost:3000/login",{user: user,password: pass}, function(data){
+                //if(data === 'yes') {
+                //    alert("login success");
+                //}
+            });
+            });
         });
-    });*/
-    }); --}}
-    {{!-- </script> --}}
-</head>
+    </script>
+</head >
+    <body>
+        <div class="container-fluid" id="paragraph">
+                    {{!-- < form href="http://localhost:3000"> --}}
+            <div class="imgcontainer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3lfb4Bj1Ojyz4HQYu_J2KcOw3dNDIPVhOg&usqp=CAU"
+                            alt="Avatar" class="avatar"></img>
+                    </div>
+<script src="/js/main.js"></script>
+                    <div class="container">
+                        <label for="uname"><b></b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" id="myInput"></input>
+                        <b></b>
+                            </label>
+                        <input type="text" placeholder="Enter Password" name="psw" id="pswd"></input>
+{{!-- onclick="location.href = 'http://localhost:3000/';" --}}
+                        <button type="submit" id = "submitButton" onclick="location.href = 'http://localhost:3000/';">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me</input>
+                    </label>
+                    <button type="submit" onclick="location.href = 'http://localhost:3000/signup';">Sign up</button>
+                    <p id="demo"></p>
 
-<body>
-    <nav class="navbar navbar-expand bg-light fixed-top shadow-sm">
-        <a class="navbar-brand" href="#">
-            <img class="home" id='lg' alt="Brand logo" src="/images/Oval.png">
-        </a>
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active home" aria-current="page" href="#">Home</a>
-                </li>
+                </div>
+                </div>
+        </div >
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Profile
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="login">Log In</a></li>
-                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="login">Log Out</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Messages</a>
-                </li>
-            </ul>
-    </nav>
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item home"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page" href="login">Login/Sign up</li>
-        </ol>
-    </nav>
-
-    <div class="container-fluid" id="paragraph">
-        {{!-- <form  href = "http://localhost:3000"> --}}
-<div class="imgcontainer">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3lfb4Bj1Ojyz4HQYu_J2KcOw3dNDIPVhOg&usqp=CAU" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b></b></label>
-    <input type="text" placeholder="Enter Username" name="uname">
-
-    <label for="psw"><b></b></label>
-    <input type="password" placeholder="Enter Password" name="psw">
-
-    <button type="submit" onclick="location.href = 'http://localhost:3000/';">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-      <button type="submit" onclick="location.href = 'http://localhost:3000/signup';">Sign up</button>
-      {{!-- onclick="location.href = 'http://localhost:3000/';" 
-      action = "/add" method="post"--}}
-  {{!-- </form> --}}
-  
-  </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-</body>
+            {{!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script> --}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+        
+        
+    </body>
 
 </html>

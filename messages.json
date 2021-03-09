@@ -1,0 +1,10 @@
+{
+    "messages": [
+        {
+            "name": "Art Commissioner",
+            "title": "Welcome",
+            "status": "read"
+        }
+    ], 
+    "login": "guest"
+}

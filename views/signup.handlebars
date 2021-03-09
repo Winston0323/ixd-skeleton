@@ -9,60 +9,26 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="/css/mainpage.css" rel="stylesheet">
-    <link href="/css/artist.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand bg-light fixed-top shadow-sm">
-        <a class="navbar-brand" href="#">
-            <img class="home" id='lg' alt="Brand logo" src="/images/Oval.png">
-        </a>
-        <div>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active home" aria-current="page" href="#">Home</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Profile
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="login">Log In</a></li>
-                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Log Out</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Messages</a>
-                </li>
-            </ul>
-    </nav>
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item home"><a href="#">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Sign up</li>
-        </ol>
-    </nav>
 
     <div class="container-fluid" id="paragraph">
-<div class="imgcontainer">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3lfb4Bj1Ojyz4HQYu_J2KcOw3dNDIPVhOg&usqp=CAU" alt="Avatar" class="avatar">
-  </div>
+        <div class="imgcontainer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3lfb4Bj1Ojyz4HQYu_J2KcOw3dNDIPVhOg&usqp=CAU"
+                alt="Avatar" class="avatar">
+        </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="psw" required>
 
-    <button type="submit">Sign up</button>
-  </div>
+            <button type="submit" onclick="location.href = 'http://localhost:3000/';">Sign up</button>
+        </div>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

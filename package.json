@@ -12,10 +12,13 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.4.0",
     "express": "3.x",
     "express3-handlebars": "*",
+    "jsdom": "^16.4.0",
     "masonry-layout": "^4.2.2",
     "mongodb": "*",
+    "body-parser": "^1.8.1",
     "mongoose": "*"
   },
   "engines": {

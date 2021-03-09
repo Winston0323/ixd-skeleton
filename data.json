@@ -1,44 +1,101 @@
 {
     "artists": [
         {
+            "artist": "V.G.",
             "name": "Starry Night",
             "id": "artist1",
             "image": "starrynight.jpg"
         },
         {
+            "artist": "J.D.",
             "name": "Lilie",
             "id": "artist2",
-            "image": "Lilie.jpg"
+            "image": "Lilie.jpeg"
         },
         {
+            "artist": "V.G.",
             "name": "Starry Night",
             "id": "artist1",
             "image": "starrynight.jpg"
         },
         {
+            "artist": "J.D.",
             "name": "Lilie",
             "id": "artist2",
-            "image": "Lilie.jpg"
+            "image": "Lilie.jpeg"
         },
         {
+            "artist": "H.V.",
             "name": "Sunflower",
             "id": "artist3",
             "image": "sunflower.jpg"
         },
         {
+            "artist": "D.C.",
             "name": "Monalisa",
             "id": "artist4",
             "image": "monalisa.jpg"
         },
         {
+            "artist": "H.V.",
             "name": "Sunflower",
             "id": "artist3",
             "image": "sunflower.jpg"
         },
         {
+            "artist": "D.C.",
+            "name": "Monalisa",
+            "id": "artist4",
+            "image": "monalisa.jpg"
+        },
+        {
+            "artist": "V.G.",
+            "name": "Starry Night",
+            "id": "artist1",
+            "image": "starrynight.jpg"
+        },
+        {
+            "artist": "J.D.",
+            "name": "Lilie",
+            "id": "artist2",
+            "image": "Lilie.jpeg"
+        },
+        {
+            "artist": "V.G.",
+            "name": "Starry Night",
+            "id": "artist1",
+            "image": "starrynight.jpg"
+        },
+        {
+            "artist": "J.D.",
+            "name": "Lilie",
+            "id": "artist2",
+            "image": "Lilie.jpeg"
+        },
+        {
+            "artist": "H.V.",
+            "name": "Sunflower",
+            "id": "artist3",
+            "image": "sunflower.jpg"
+        },
+        {
+            "artist": "D.C.",
+            "name": "Monalisa",
+            "id": "artist4",
+            "image": "monalisa.jpg"
+        },
+        {
+            "artist": "H.V.",
+            "name": "Sunflower",
+            "id": "artist3",
+            "image": "sunflower.jpg"
+        },
+        {
+            "artist": "D.C.",
             "name": "Monalisa",
             "id": "artist4",
             "image": "monalisa.jpg"
         }
-    ]
+    ], 
+    "login": "guest"
 }
