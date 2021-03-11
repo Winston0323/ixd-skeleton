@@ -28,11 +28,7 @@ exports.viewChat = function (req, res) {
   }
 
   res.render('chat', data.chat[i]);
-  // res.render('chat', {
-  //   "artist": artist,
-  //   "name": name,
-  //   "imageName": img
-  // });
+
 
   for (var i = 0; i < data.messages.length; i++) {
     var temp = data.messages[i];
