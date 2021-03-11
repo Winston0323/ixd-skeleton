@@ -71,52 +71,29 @@
 				</div>
 			</div>
 			{{/each}}
-			{{!-- <div class="row no-gutter">
-				<div class="col-lg-4" id="chat">
-					<div class="message--left">
-						<div class="user-icon--left">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-						<div class="chat-bubble chat-bubble--left">
-							{{this.left}}
-						</div>
-					</div>
-				</div>
-			</div>
-			{{/each}}
-			<div class="row no-gutter">
-				<div class="col-lg-4">
-					<div class="message--left">
-						<div class="user-icon--left">
-							<i class="fas fa-user-alt" id="user"></i>
-						</div>
-						<div class="chat-bubble chat-bubble--left">
-							<a href="http://localhost:3000/addOrder/{{artist}}">Final</a>
-						</div>
-					</div>
-				</div>
-			</div> --}}
 		</section>
 	</div>
-	{{!-- <div class="fixed-bottom"> --}}
-		{{!-- <div class="row"> --}}
-			{{!-- <div class="col-md-12"> --}}
-				<form class="fixed-bottom" id="sendTextForm" role="form" method="get"
-					action="/artist/{{name}}&{{artist}}/chat/send">
-					<div class="chat-box-tray">
-						<input type="text" id='text' name='text' placeholder="Type your messages">
-						</input>
-						<div class="input-group-append">
-							<button type="submit" class="btn btn-primary">
-								<i class="fas fa-paper-plane"></i>
-							</button>
-						</div>
-					</div>
-				</form>
-				{{!--
-			</div> --}}
-			{{!-- </div> --}}
-		{{!-- </div> --}}
+
+	<form class="fixed-bottom" id="sendTextForm" role="form" method="get"
+		action="/artist/{{name}}&{{artist}}/chat/send">
+		<div display="inline-block">
+			<input type="button" class="btn btn-outline-primary status" value="status">
+			<input type="button" class="btn btn-outline-secondary hello" value="hello">
+			<input type="button" class="btn btn-outline-success cancel" value="cancel order">
+			<input type="button" class="btn btn-outline-info pay" value="pay">
+		</div>
+		{{!-- <input class="btn btn-primary" type="button" id='text' name='text'
+			value="Are you accepting new [insert type] order?"> --}}
+		<div class="chat-box-tray">
+			<input type="text" id='text' name='text' placeholder="Type your messages">
+			</input>
+			<div class="input-group-append">
+				<button type="submit" class="btn btn-primary">
+					<i class="fas fa-paper-plane"></i>
+				</button>
+			</div>
+		</div>
+	</form>
 
 	{{!--
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -135,7 +112,7 @@
 	<script src="https://kit.fontawesome.com/c4240f549f.js" crossorigin="anonymous"></script>
 	<script src="/js/masonry.js"></script>
 	<script src="/js/main.js"></script>
-	<script src="/js/acceptbutton.js"></script>
+	<script src="/js/chat_sc.js"></script>
 </body>
 
 </html>
