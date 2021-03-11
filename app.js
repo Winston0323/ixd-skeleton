@@ -24,7 +24,7 @@ var send = require("./routes/send");
 var avail = require('./routes/availability');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
-var orderDetail = require('./routes/orderDetail')
+var transaction = require('./routes/transaction');
 // Example route
 // var user = require('./routes/user');
 
@@ -58,7 +58,6 @@ app.get('/pottery', indexPottery.viewPottery);
 app.get('/watercolor', indexWatercorlor.viewWatercolor);
 app.get('/messages', messages.viewMessages);
 app.get('/calendars', calendars.viewCalendars);
-app.get('/orders/orderDetail', orderDetail.viewOrderDetail);
 app.get('/orders', orders.viewOrders);
 app.get('/addOrder/:artist', add.addOrder);
 app.get('/artist/:name&:artist', artist.viewArtist);
@@ -67,6 +66,7 @@ app.get('/artist/:name&:artist/availability', avail.viewAvail);
 app.get('/artist/:name&:artist/chat/send', send.sendText)
 app.get('/login', login.viewLogin);
 app.get('/signup', signup.viewSignup);
+app.get('/transaction/:artist', transaction.viewTran);
 // app.get('/add', add.addFriend);
 // app.get('/description1', description1.view);
 // Example route
