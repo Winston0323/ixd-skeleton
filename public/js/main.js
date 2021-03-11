@@ -28,8 +28,8 @@ function initializePage() {
     // }, function () {
     //     $(this).removeClass('transition');
     // });
-    $('figure.zoom').on('touchstart touchend', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('transition');
-    });
+    // $('figure.zoom').on('touchstart touchend', function (e) {
+    //     e.preventDefault();
+    //     $(this).toggleClass('transition');
+    // });
 }
