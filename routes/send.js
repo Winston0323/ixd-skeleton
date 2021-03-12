@@ -2,10 +2,11 @@ var data = require("../data.json");
 
 exports.sendText = function (request, response) {
     // Your code goes here
-    console.log("in send " + request.params);
+    // console.log("in send " + request.params);
     var name = request.params.name;
     var artist = request.params.artist;
     var newText = request.query.text;
+    console.log(newText);
     var i;
     for (i = 0; i < data.chat.length; i++) {
         var temp = data.chat[i];
@@ -22,7 +23,14 @@ exports.sendText = function (request, response) {
             break;
         }
     }
+    if (newText.indexOf('status') != -1) {
+        data.chat[i].text.push({
+            "lg-end": false,
+            "from": "left",
+            "txt": "Here's the <a href='http://localhost:3000/addOrder/A.G.'>order status</a>"
+        });
+    }
 
-    console.log(data.chat[i].text);
+    // console.log(data.chat[i].text);
     response.render("chat", data.chat[i]);
 }

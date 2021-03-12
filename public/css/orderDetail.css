@@ -161,10 +161,11 @@ figure{
 }
 .accept-btn{
   background-color: #FF603F;
-  width: 67px;
-  padding: 5 5 5 5px;
-  border-radius: 4px;
-  border: 1px solid black;
+  width: auto;
+  padding: 10px;
+  /* border-radius: 4px; */
+  /* border: 1px solid black; */
+font-size: 1.2rem;
   align-items: center;
   justify-content: center;
   margin-right: 0px;

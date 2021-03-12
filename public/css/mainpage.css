@@ -226,9 +226,9 @@ figure.zoom {
     /* width: 350px;
     height: 200px; */
     -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
+    -moz-transition: all .05s ease-in-out;
     -o-transition: all .1s ease-in-out;
-    -ms-transition: all .1s ease-in-out;
+    -ms-transition: all .05s ease-in-out;
 }
  
 .transition {
