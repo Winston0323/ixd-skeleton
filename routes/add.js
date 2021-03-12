@@ -16,6 +16,8 @@ exports.addOrder = function (req, res) {
 	var progressbar = 0;
 	var acceptable = 0;
 	var finish = 0;
+	var prepared = 0;
+	var revise = false;
 	
 	var newOrder = {
 		"name": pieceName,
@@ -43,7 +45,7 @@ exports.addOrder = function (req, res) {
 							'</div>';
 		progressbar = "progress-prepared";
 		acceptable = false;
-		
+		prepared = "active";
 	}else if(status == "completed"){
 		var progressBlock = '<div class = "frame">'+
 						'<p>The order has been finished. Please confirm</p>' +
@@ -51,18 +53,36 @@ exports.addOrder = function (req, res) {
 						'</div>';
 		progressbar = "progress-finished";
 		acceptable = true;
+		prepared = "active";
 	}else if(status == "accpeted") {
 		var progressBlock = '<div class = "frame">'+
 						'<p>The order has been completed.</p>' +
 						'</div>';
 		progressbar = "progress-finished";
 		acceptable = false;
+		prepared = "active";
+	}else if(status == "received"){
+		var progressBlock = '<div class = "frame">'+
+		'<p>The order was received by the artist!</p>' +
+		'</div>';
+		progressbar = "progress-received";
+		acceptable = false;
+		prepared = "";
+	}else if(status == "revising"){
+		var progressBlock = '<div class = "frame">'+
+		'<p>The artist is revising your changes!</p>' +
+		'</div>';
+		progressbar = "progress-prepared";
+		acceptable = false;
+		prepared = "active";
+		revise = true;
 	}else{
 		var progressBlock = '<div class = "frame">'+
 						'<p>Unavalible</p>' +
 						'</div>';
 		progressbar = "progress-received";
 		acceptable = false;
+		prepared = "active";
 	}
 
 	//document.getElementById("progress-description").innerHTML = codeBlock;	
@@ -77,7 +97,9 @@ exports.addOrder = function (req, res) {
 	"detail": progressBlock,
 	"progressbar": progressbar,
 	"acceptable": acceptable, 
-	"Finished": finish
+	"Finished": finish,
+	"Prepared": prepared,
+	"revise": revise
   });
 }
 // const { request } = require('express');

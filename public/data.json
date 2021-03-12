@@ -239,6 +239,24 @@
             "price": "$500",
             "product": "yellowgrass.jpg",
             "Finished": "active"
+        },
+        {
+            "name": "Comic A",
+            "artist": "Y.P.",
+            "date": "Feb 15, 2021",
+            "status": "revising",
+            "price": "$45",
+            "product": "Comic 1.jpg",
+            "Finished": ""
+        },
+        {
+            "name": "Pottery A",
+            "artist": "U.O.",
+            "date": "Mar 5, 2021",
+            "status": "recieved",
+            "price": "$600",
+            "product": "Unavaliable",
+            "Finished": ""
         }
     ]
 }

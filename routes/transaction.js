@@ -28,30 +28,19 @@ exports.viewTran = function (req, res) {
       break;
     }
   }
-  if (status == "preparing") {
+ if (status == "received") {
     detail = '<div class = "detail">' +
-      '<p>We just receieve your payment!</p>' +
-      '<p>The moony will be sent to artist once you accept!</p>' +
-      '</div>';
-    paid = true;
-  } else if (status == "completed") {
-    detail = '<div class = "detail">' +
-      '<p>We just receieve your payment!</p>' +
-      '<p>The moony will be sent to artist once you accept!</p>' +
-      '</div>';
-    paid = true;
-  } else if (status == "accpeted") {
-    detail = '<div class = "detail">' +
-      '<p>We just receieve your payment!</p>' +
-      '<p>The moony will be sent to artist once you accept!</p>' +
-      '</div>';
-    paid = true;
-  } else {
-    detail = '<div class = "detail">' +
-      '<p>We just receieve your $!</p>' +
-      '<p>Payment will be sent to artist once you accept</p>' +
+      '<p>PENDING</p>' +
+      '<p>Artist will start preparing</p>'+
+      '<p>once we receive the Payment!</p>' +
       '</div>';
     paid = false;
+  } else {
+    detail = '<div class = "detail">' +
+      '<p>RECEIVED</p>' +
+      '<p>Payment will be sent to artist once you accept</p>' +
+      '</div>';
+    paid = true;
   }
   console.log("status is " + status);
   res.render('transaction', {

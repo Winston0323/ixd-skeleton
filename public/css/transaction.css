@@ -29,6 +29,10 @@ body{
     font-size: 150px;
     color:rgb(21, 241, 1);
 }
+#exclamation{
+    font-size: 150px;
+    color:rgb(241, 185, 1);
+}
 .amount{
     display: flex;
     align-items: center;

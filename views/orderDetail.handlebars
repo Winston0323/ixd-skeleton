@@ -54,10 +54,17 @@
     </nav>
     <div class="container">
         <div class="progress-container">
-            <div class="circle active">Recieve</div>
-            <div class="circle active">Prepare</div>
-            <div class="circle {{Finished}}">Finished</div>
-            <div class="{{progressbar}}" id="progress"></div>
+            {{#if revise}}
+                <div class="circle"></div>
+                <div class="circle revise">Revising</div>
+                <div class="circle"></div>
+                <div class="revise-bar" id="progress"></div>
+            {{else}}
+                <div class="circle active">Recieve</div>
+                <div class="circle {{Prepared}}">Prepare</div>
+                <div class="circle {{Finished}}">Finished</div>
+                <div class="{{progressbar}}" id="progress"></div>
+            {{/if}}
         </div>
         <h1>Order Details</h1>
         <div class="detail-sector" id="order-detail">
