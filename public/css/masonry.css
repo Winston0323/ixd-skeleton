@@ -27,17 +27,36 @@ figure a {
   text-decoration: none;
 }
 
-figcaption {
-  position: absolute;
-  /* float: left; */
-  /* top: -30.38px; */
-  /* grid-row: 2;
-  grid-column: 1; */
+.nameCaption {
+  position: absolute; 
   background-color: rgba(255,255,255,.5);
   /* padding: .2em .5em; */
   bottom:0;
   left:0;
   justify-self: center;
+}
+  
+.heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  writing-mode: vertical-rl;
+}
+
+/* .heart:active {     
+  background-color:yellow;    
+}
+
+.heart:visited {     
+  background-color:yellow;    
+} */
+
+.fa .fa-heart:active {     
+  background-color:yellow;    
+}
+
+.fa .fa-heart:focus {     
+  background-color:yellow;    
 }
 
 .container.masonry{

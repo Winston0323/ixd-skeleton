@@ -240,5 +240,6 @@
             "product": "yellowgrass.jpg",
             "Finished": "active"
         }
-    ]
+    ],
+    "login": "guest"
 }

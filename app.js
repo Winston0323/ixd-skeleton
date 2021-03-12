@@ -25,8 +25,11 @@ var avail = require('./routes/availability');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
 var transaction = require('./routes/transaction');
+var account = require('./routes/account');
 // Example route
 // var user = require('./routes/user');
+var change = require('./routes/postmethod');
+// var bodyParser = require("body-parser");
 
 var app = express();
 // all environments
@@ -43,6 +46,7 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(bodyParser.urlencoded({ extended: false }));
 
 // development only
 if ('development' == app.get('env')) {
@@ -67,10 +71,17 @@ app.get('/artist/:name&:artist/chat/send', send.sendText)
 app.get('/login', login.viewLogin);
 app.get('/signup', signup.viewSignup);
 app.get('/transaction/:artist', transaction.viewTran);
+app.get('/account', account.viewAccount);
 // app.get('/add', add.addFriend);
 // app.get('/description1', description1.view);
 // Example route
 // app.get('/users', user.list);
+app.post('/login',change.change);
+
+app.post('/',(req,res) => {
+  $window.location.href = response;
+});
+
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));

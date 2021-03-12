@@ -9,6 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<link href="/css/mainpage.css" rel="stylesheet">
 	<link href="/css/masonry.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -30,6 +31,7 @@
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<li><a class="dropdown-item" href="http://localhost:3000/calendars">Schedules</a></li>
 					<li><a class="dropdown-item" href="orders">Orders</a></li>
+					<li><a class="dropdown-item" href="account">Account</a></li>
 					<li>
 						<hr class="dropdown-divider">
 					</li>
@@ -62,7 +64,8 @@
 				<figure class="zoom" id="{{id}}">
 					{{!-- http://localhost:3000 --}}
 					<img class="img-fluid" src="images/{{image}}" />
-					<figcaption class="justify-content-center"><a href="#">{{artist}}</a></figcaption>
+					<figcaption ><a href="#" class="justify-content-center nameCaption">{{artist}}</a> </figcaption> 
+					<figcaption ><a href="#" class="heart" onclick=""><i class="fa fa-heart"></i></a> </figcaption>
 				</figure>
 			</a>
 			{{/each}}
