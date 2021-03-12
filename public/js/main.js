@@ -18,11 +18,13 @@ $(document).ready(function () {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+    console.log("connected");
     $('figure.zoom').hover(function () {
         $(this).addClass('transition');
     }, function () {
         $(this).removeClass('transition');
     });
+    $(".done-btn").click(doneClick);
     // $('figure.zoom').on("taphold", function () {
     //     $(this).addClass('transition');
     // }, function () {
@@ -32,4 +34,9 @@ function initializePage() {
     //     e.preventDefault();
     //     $(this).toggleClass('transition');
     // });
+}
+function doneClick(e){
+    //e.preventDefault();
+    console.log("clicked done");
+    window.history.back();
 }

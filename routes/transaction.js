@@ -30,20 +30,20 @@ for (var i = 0; i < data.orders.length; i++) {
 }
 if(status == "preparing"){
   detail = '<div class = "detail">'+
-  '<p>We just receieve your payment!</p>' +
-  '<p>The moony will be sent to artist once you accept!</p>'+
+  '<p>We just receieve your $!</p>' +
+  '<p>Payment will be sent to artist once you accept</p>'+
   '</div>';
   paid = true;
 }else if(status == "completed"){
   detail = '<div class = "detail">'+
-  '<p>We just receieve your payment!</p>' +
-  '<p>The moony will be sent to artist once you accept!</p>'+
+  '<p>We just receieve your $!</p>' +
+  '<p>Payment will be sent to artist once you accept</p>'+
   '</div>';
   paid = true;
 }else if(status == "accpeted") {
   detail = '<div class = "detail">'+
-  '<p>We just receieve your payment!</p>' +
-  '<p>The moony will be sent to artist once you accept!</p>'+
+  '<p>We just receieve your $!</p>' +
+  '<p>Payment will be sent to artist once you accept</p>'+
   '</div>';
   paid = true;
 }else{

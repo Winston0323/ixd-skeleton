@@ -1,19 +1,19 @@
 {
     "artists": [
         {
-            "artist": "V.G.",
+            "artist": "D.W.",
             "name": "Acrylic 1",
             "id": "artist1a",
             "image": "acrylic 1.jpeg"
         },
         {
-            "artist": "D.W.",
+            "artist": "V.G.",
             "name": "Cartoon 1",
             "id": "artist1ca",
             "image": "cartoon 1.jpg"
         },
         {
-            "artist": "A.G.",
+            "artist": "J.D.",
             "name": "Watercolor 3",
             "id": "artist3w",
             "image": "watercolor 3.jpg"
@@ -31,7 +31,7 @@
             "image": "charcoal 1.jpg"
         },
         {
-            "artist": "J.D.",
+            "artist": "A.G.",
             "name": "Acrylic 2",
             "id": "artist2a",
             "image": "acrylic 2.jpg"
@@ -220,6 +220,7 @@
             "price": "$200",
             "product": "selfportrait.jpg",
             "Finished": ""
+            
         },
         {
             "name": "Landscape A",
