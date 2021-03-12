@@ -31,6 +31,6 @@ exports.sendText = function (request, response) {
         });
     }
 
-    console.log(data.chat[i].text);
+    // console.log(data.chat[i].text);
     response.render("chat", data.chat[i]);
 }
