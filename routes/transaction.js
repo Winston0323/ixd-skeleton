@@ -28,14 +28,16 @@ exports.viewTran = function (req, res) {
       break;
     }
   }
- if (status == "received") {
+  if (status == "received") {
+    status = "Processing";
     detail = '<div class = "detail">' +
       '<p>PENDING</p>' +
-      '<p>Artist will start preparing</p>'+
+      '<p>Artist will start preparing</p>' +
       '<p>once we receive the Payment!</p>' +
       '</div>';
     paid = false;
   } else {
+    status = "Confirmed";
     detail = '<div class = "detail">' +
       '<p>RECEIVED</p>' +
       '<p>Payment will be sent to artist once you accept</p>' +

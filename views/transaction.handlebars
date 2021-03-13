@@ -14,17 +14,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand bg-light fixed-top shadow-sm">
+    <nav class="navbar navbar-expand fixed-top shadow-sm">
         <div class="title">{{status}}<div>
     </nav>
     <div class="container">
         <div class="status-pic">
             {{#if paid}}
-                <i class="far fa-check-circle" id="check"></i>
+            <i class="far fa-check-circle" id="check"></i>
             {{else}}
-                <i class="fas fa-exclamation-circle" id="exclamation"></i>
+            <i class="fas fa-exclamation-circle" id="exclamation"></i>
             {{/if}}
         </div>
+        <br>
         <div class="amount">
             <p>{{price}}</p>
         </div>
