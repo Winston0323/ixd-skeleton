@@ -9,7 +9,7 @@ $(document).ready(function(){
 				initializePage();
 		});
 	    $("#button-description").click(function(){
-			$("button-description").hide();
+			$("#button-description").hide();
 			$("#progress-description").text("Final product accepted!");
 		})
 })

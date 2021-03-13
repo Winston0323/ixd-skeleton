@@ -44,20 +44,32 @@ figure a {
 }
 
 /* .heart:active {     
-  background-color:yellow;    
+  color:yellow;    
 }
 
 .heart:visited {     
-  background-color:yellow;    
+  color:yellow; :visited    
 } */
 
-.fa .fa-heart:active {     
-  background-color:yellow;    
+/* i.fa.fa-heart::before::before {     
+  color:black;    
 }
 
-.fa .fa-heart:focus {     
-  background-color:yellow;    
+i.fa.fa-heart::before:focus {     
+  color:yellow;    
 }
+
+i.fa.fa-heart::before:active {     
+  color:yellow;    
+}
+
+i.fa.fa-heart::before::after {     
+  color:yellow;    
+} */
+
+/* .fa .fa-heart:focus {     
+  background-color:yellow;    
+} */
 
 .container.masonry{
   column-count: 4;
