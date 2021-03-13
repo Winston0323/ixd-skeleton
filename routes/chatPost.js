@@ -53,7 +53,7 @@ exports.postChat = function (req, res) {
             "linkable": false,
             "lg-end": false,
             "from": "left",
-            "txt": "Thanks for contacting me. I'll get back to you as soon as possible. Or, you can refer to this <a href='http://localhost:3000/artist/" + temp + "/availability'>calendar</a> for availability."
+            "txt": "Thanks for contacting me. I'll get back to you as soon as possible. Or, you can refer to this <a href='https://a8-artcommissioner.herokuapp.com/artist/" + temp + "/availability'>calendar</a> for availability."
         });
     } else {
         for (var j = 0; j < data.orders.length; j++) {
@@ -63,7 +63,7 @@ exports.postChat = function (req, res) {
                         "linkable": true,
                         "lg-end": false,
                         "from": "left",
-                        "txt": "Here's the order <a href='http://localhost:3000/addOrder/" + artist + "'>status</a>. "
+                        "txt": "Here's the order <a href='https://a8-artcommissioner.herokuapp.com/addOrder/" + artist + "'>status</a>. "
                     });
                     break;
                 } else if (newText == "Here's the deposit.") {
@@ -71,7 +71,7 @@ exports.postChat = function (req, res) {
                         "linkable": false,
                         "lg-end": false,
                         "from": "left",
-                        "txt": "Thanks for the deposit. See <a href='http://localhost:3000/transaction/" + artist + "'>transaction detail</a> here."
+                        "txt": "Thanks for the deposit. See <a href='https://a8-artcommissioner.herokuapp.com/transaction/" + artist + "'>transaction detail</a> here."
                     });
                     break;
                 } else if (newText == "I'd like to cancel my order.") {
