@@ -70,6 +70,7 @@ app.get('/artist/:name&:artist/chat/send', send.sendText)
 app.get('/login', login.viewLogin);
 app.get('/signup', signup.viewSignup);
 app.get('/transaction/:artist', transaction.viewTran);
+app.post('/artist/:name&:artist/chat', chatPost.postChat);
 // app.get('/add', add.addFriend);
 // app.get('/description1', description1.view);
 // Example route
