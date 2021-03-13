@@ -26,6 +26,7 @@ var login = require('./routes/login');
 var signup = require('./routes/signup');
 var transaction = require('./routes/transaction');
 var chatPost = require('./routes/chatPost');
+var account = require('./routes/account');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,6 +52,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 //filter options
+app.get('/account', account.viewAccount);
 app.get('/acrylic', indexAcrylic.viewAcrylic);
 app.get('/digital', indexDigital.viewDigital);
 app.get('/sketch', indexSketch.viewSketch);
