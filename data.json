@@ -224,7 +224,7 @@
                     "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Your order is in <a href='https://a8-artcommissioner.herokuapp.com/'>revising</a>."
+                    "txt": "Your order is in <a href='https://a8-artcommissioner.herokuapp.com/addOrder/Y.P.'>revising</a>."
                 }
             ]
         },
