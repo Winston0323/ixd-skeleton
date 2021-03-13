@@ -27,7 +27,7 @@ exports.sendText = function (request, response) {
         data.chat[i].text.push({
             "lg-end": false,
             "from": "left",
-            "txt": "Here's the <a href='http://localhost:3000/addOrder/A.G.'>order status</a>"
+            "txt": "Here's the <a href='https://a8-artcommissioner.herokuapp.com//addOrder/A.G.'>order status</a>"
         });
     }
 

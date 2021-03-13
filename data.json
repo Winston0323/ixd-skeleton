@@ -131,7 +131,7 @@
                     "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Here's the <a href='https://a7-artcommissioner.herokuapp.com/addOrder/A.G.'>Final</a>"
+                    "txt": "Here's the <a href='https://a8-artcommissioner.herokuapp.com/addOrder/A.G.'>Final</a>"
                 }
             ]
         },
@@ -162,7 +162,7 @@
                     "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Here's the <a href='https://a7-artcommissioner.herokuapp.com/addOrder/D.W.'>Final</a>"
+                    "txt": "Here's the <a href='https://a8-artcommissioner.herokuapp.com/addOrder/D.W.'>Final</a>"
                 }
             ]
         },
@@ -193,7 +193,7 @@
                     "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Check here for <a href='https://a7-artcommissioner.herokuapp.com/addOrder/V.G.'>status</a>"
+                    "txt": "Check here for <a href='https://a8-artcommissioner.herokuapp.com/addOrder/V.G.'>status</a>"
                 }
             ]
         },
@@ -224,7 +224,7 @@
                     "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Your order is in <a href='https://a7-artcommissioner.herokuapp.com/addOrder/Y.P.'>revising</a>."
+                    "txt": "Your order is in <a href='https://a8-artcommissioner.herokuapp.com/'>revising</a>."
                 }
             ]
         },
@@ -255,7 +255,7 @@
                     "linkable": true,
                     "lg-end": false,
                     "from": "left",
-                    "txt": "Check here for <a href='https://a7-artcommissioner.herokuapp.com/addOrder/U.O.'>status</a>"
+                    "txt": "Check here for <a href='https://a8-artcommissioner.herokuapp.com/addOrder/U.O.'>status</a>"
                 }
             ]
         }
