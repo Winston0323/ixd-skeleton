@@ -86,28 +86,23 @@
         </div>
         <br>
         <h1>Product</h1>
-        <div class="detail-sector">
+        <div class="detail-sector image">
             <div class="frame">
                 <img class="img-fluid" src="../images/{{product}}" />
                 <!-- <img class="img-fluid" src="images/watercolor 1.jpg" /> -->
             </div>
         </div>
         <div class="bottom">
-            {{#if acceptable}}
-            <div class="accept-btn" id="button-description">Accept</div>
-
+            {{#if pay}}
+                <div class="pay-btn" id="button-description">Pay</div>
+            {{else}}
+                {{#if acceptable}}
+                    <div class="accept-btn" id="button-description">Accept</div>
+                    <div class="decline-btn" id="button-description">Decline</div>
+                {{/if}}
             {{/if}}
         </div>
-        {{!--
-        <script>
-            function myFunction() {
-                //document.getElementById("button-description").innerHTML = "";
-                document.getElementById("button-description").style.visibility = "hidden";
-                document.getElementById("progress-description").innerHTML = "<div class='frame'><p>Final product accepted!</p></div>";
-            }
-        </script> --}}
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>

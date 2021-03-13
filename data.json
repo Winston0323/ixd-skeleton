@@ -235,7 +235,7 @@
             "name": "Landscape B",
             "artist": "A.G.",
             "date": "Feb 2, 2021",
-            "status": "accpeted",
+            "status": "accepted",
             "price": "$500",
             "product": "yellowgrass.jpg",
             "Finished": "active"
@@ -255,7 +255,7 @@
             "date": "Mar 5, 2021",
             "status": "received",
             "price": "$1600",
-            "product": "Unavaliable",
+            "product": "no image.jpg",
             "Finished": ""
         }
     ]

@@ -18,6 +18,7 @@ exports.addOrder = function (req, res) {
 	var finish = 0;
 	var prepared = 0;
 	var revise = false;
+	var pay = false;
 	
 	var newOrder = {
 		"name": pieceName,
@@ -54,7 +55,7 @@ exports.addOrder = function (req, res) {
 		progressbar = "progress-finished";
 		acceptable = true;
 		prepared = "active";
-	}else if(status == "accpeted") {
+	}else if(status == "accepted") {
 		var progressBlock = '<div class = "frame">'+
 						'<p>The order has been completed.</p>' +
 						'</div>';
@@ -68,6 +69,7 @@ exports.addOrder = function (req, res) {
 		progressbar = "progress-received";
 		acceptable = false;
 		prepared = "";
+		pay = true;
 	}else if(status == "revising"){
 		var progressBlock = '<div class = "frame">'+
 		'<p>The artist is revising your changes!</p>' +
@@ -99,7 +101,8 @@ exports.addOrder = function (req, res) {
 	"acceptable": acceptable, 
 	"Finished": finish,
 	"Prepared": prepared,
-	"revise": revise
+	"revise": revise,
+	"pay": pay
   });
 }
 // const { request } = require('express');

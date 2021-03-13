@@ -163,10 +163,13 @@ figure{
   margin-left: 10px;
   border: 1px solid white;
 }
+.detail-sector.image{
+  justify-content: center;
+}
 .bottom{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 10px;
   margin-right: 0px; 
 }
@@ -174,15 +177,36 @@ figure{
   background-color: #FF603F;
   width: auto;
   padding: 10px;
-  /* border-radius: 4px; */
-  /* border: 1px solid black; */
-font-size: 1.2rem;
+  font-size: 1.2rem;
   align-items: center;
   justify-content: center;
   margin-right: 0px;
   color: #F2F9FC;
 }
-
+.decline-btn{
+  background-color: gray;
+  width: auto;
+  padding: 10px;
+  /* border-radius: 4px; */
+  /* border: 1px solid black; */
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
+  color: #F2F9FC;
+}
+.pay-btn{
+  background-color: rgb(65, 209, 65);
+  width: auto;
+  padding: 10px;
+  /* border-radius: 4px; */
+  /* border: 1px solid black; */
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
+  color: #F2F9FC;
+}
 #progress-description{
   width: 95%;
   height: 15%;

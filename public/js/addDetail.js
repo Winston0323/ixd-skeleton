@@ -8,10 +8,31 @@ $(document).ready(function(){
 		  .then(d => {data = d;
 				initializePage();
 		});
-	    $("#button-description").click(function(){
-			$("button-description").hide();
+	    $(".accept-btn").click(function(){
+			console.log("status is", localStorage.getItem('status'));
+			$(".accept-btn").hide();
+			$(".decline-btn").hide();
 			$("#progress-description").text("Final product accepted!");
-		})
+			localStorage.setItem('status','accept');
+			console.log("status is", localStorage.getItem('status'));
+		});
+		$(".decline-btn").click(function(){
+			console.log("status is", localStorage.getItem('status'));
+			$(".progress-container").replaceWith(' <div class="progress-container"><div class="circle"></div><div class="circle revise">Revising</div><div class="circle"></div><div class="revise-bar" id="progress"></div></div>');
+			$(".accept-btn").hide();
+			$(".decline-btn").hide();
+			$("#progress-description").text("The artist is revising your changes!");
+			//localStorage.setItem('status', 'revising');
+			
+		});
+		$(".pay-btn").click(function(){
+			console.log("status is", localStorage.getItem('status'));
+			$(".progress-container").replaceWith(' <div class="progress-container"><div class="circle active">Received</div><div class="circle">Preparing</div><div class="circle">Finished</div><div class="progress-received" id="progress"></div></div>');
+			$(".pay-btn").hide();
+			$("#progress-description").text("We just receive your payment!");
+			console.log("status is", localStorage.getItem('status'));
+		});
+
 })
 
 /*
@@ -56,7 +77,7 @@ function addProjectDetails(e) {
 						'<p>The order has been finished. Please confirm</p>' +
 						'<p>if you accepet the final product</p>'+
 						'</div>';
-	}else if(status == "accpeted") {
+	}else if(status == "accepted") {
 		var progressBlock = '<div class = "frame">'+
 						'<p>The order has been completed.</p>' +
 						'</div>';
