@@ -41,6 +41,6 @@ exports.viewChat = function (req, res) {
     "title": "Hello",
     "status": "read"
   }
-  console.log(newMessage);
+  // console.log(newMessage);
   data.messages.push(newMessage);
 };

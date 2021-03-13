@@ -198,10 +198,66 @@
             ]
         },
         {
-            "artist": "D.C.",
-            "name": "Acrylic 4",
+            "name": "Comic A",
+            "artist": "Y.P.",
             "title": "Hello",
-            "text": []
+            "text": [
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
+                },
+                {
+                    "linkable": false,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Your order is in <a href='https://a7-artcommissioner.herokuapp.com/addOrder/Y.P.'>revising</a>."
+                }
+            ]
+        },
+        {
+            "name": "Pottery A",
+            "artist": "U.O.",
+            "title": "Hello",
+            "text": [
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "What's your price for a normal sized piece?"
+                },
+                {
+                    "linkable": false,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "It will be around $100 or so? Depend on the details though."
+                },
+                {
+                    "linkable": false,
+                    "lg-end": true,
+                    "from": "right",
+                    "txt": "Good to know!"
+                },
+                {
+                    "linkable": true,
+                    "lg-end": false,
+                    "from": "left",
+                    "txt": "Check here for <a href='https://a7-artcommissioner.herokuapp.com/addOrder/U.O.'>status</a>"
+                }
+            ]
         }
     ],
     "messages": [
@@ -220,7 +276,6 @@
             "price": "$200",
             "product": "selfportrait.jpg",
             "Finished": ""
-            
         },
         {
             "name": "Landscape A",

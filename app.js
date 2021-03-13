@@ -25,6 +25,7 @@ var avail = require('./routes/availability');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
 var transaction = require('./routes/transaction');
+var chatPost = require('./routes/chatPost');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,7 +44,6 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -71,6 +71,7 @@ app.get('/transaction/:artist', transaction.viewTran);
 // app.get('/description1', description1.view);
 // Example route
 // app.get('/users', user.list);
+app.post('/artist/:name&:artist/chat', chatPost.postChat);
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
