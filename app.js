@@ -26,6 +26,7 @@ var login = require('./routes/login');
 var signup = require('./routes/signup');
 var transaction = require('./routes/transaction');
 var chatPost = require('./routes/chatPost');
+var change = require('./routes/postmethod');
 // Example route
 // var user = require('./routes/user');
 
@@ -71,6 +72,11 @@ app.get('/transaction/:artist', transaction.viewTran);
 // app.get('/description1', description1.view);
 // Example route
 // app.get('/users', user.list);
+app.post('/login',change.change);
+
+app.post('/',(req,res) => {
+  $window.location.href = response;
+});
 app.post('/artist/:name&:artist/chat', chatPost.postChat);
 
 http.createServer(app).listen(app.get('port'), function () {
